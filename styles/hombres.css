@@ -1,0 +1,34 @@
+body {
+    font-size: 100%;
+    line-height: 1.5em;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #edeef3;
+    background-color: #181818;
+}
+header {
+    width: 100%;
+}
+img {
+    position: absolute;
+    left: 0.67em;
+}
+h1 {
+    font-size: 2em;
+    color: #edeef3;
+    text-align: center;
+}
+#concertar_cita {
+    text-align: center;
+}
+/* Link color of "aqua" when not focused/visited at all */
+a:link {
+    color: aqua;
+}
+/* Sets the font style to italic when focused */
+a:focus {    font-style: italic;    }
+/* Sets the font style to italic when hovered */
+a:hover {    font-style: italic;    }
+/* Link color of "Electric Purple" when visited */
+a:visited {
+    color: #BF00FF; 
+}
