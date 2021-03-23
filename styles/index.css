@@ -1,37 +1,55 @@
-html {    font-size: 100%;    }
-body {
+* {    box-sizing: border-box;    }
+html, body {
+    height: 100%;    /* Sets height to keep footer at the bottom */
     font-family: Arial, Helvetica, sans-serif;
 	font-size: 100%;
-    line-height: 1.5em;
-    background-color: #181818;
-    color: #edeef3;
+    line-height: 1.5em;    /* Sets line-height for reader accessibility */
+    background-color: #181818;    /* Dark mode website */
+    color: #edeef3;    /* white font color */
 }
-/*  Holds the main content of the page which is set to be as wide as the page */
-main {    width: 100%;    }
-/* Holds the logo img & salon name and puts it in the top middle of the page */
+main {
+    min-height: 100%;    /* Main content at least 100% tall to keep footer at bottom */
+    overflow: auto;    /* Does something with the scroll bar */
+    padding-bottom: 1.5rem;    /* Padding for bottom of main content = footer height */
+}
+/* Holds the logo & salon name and puts it in the top middle of the page */
 h1 {
-    font-size: 2em;
-    text-align: center;
+    min-height: 32px;    /* Sets height to be equal with other pages */
+    font-size: 2em;    /* h1 automatically 2em but specified for clarity */
+    text-align: center;    /* Puts text * img in the middle of the h1 */
 }
-/* Lines up the logo next to the salon name */
-img {    vertical-align: text-top;    }
-/* Holds the span elements which hold the navigations to hairstyles page & appointments */
-nav {    text-align: center;    }
-/* Sets the font size for the appointment link to 120% to be more identifiable */
-#cita {    font-size: 120%;    }
-/* Link color of "aqua" when not focused at all */
+/* Lines up the logo next to the salon name & scales the image based on font size */
+h1 img {
+    vertical-align: text-top;    /* Aligns img to the middle of the text... kind of */
+    height: 1em;    /* Allows the img to be scaled based on the h1 font-size */
+}
+/* Holds the navigations to hairstyles page & appointments */
+nav ul{
+    margin: 0;
+    padding: 1em 0;    /* Padding to top & bottom to look more pleasing */
+    list-style-type: none;    /* Removes bullets normally applied to ul's */
+    text-align: center;    /* Puts text in the middle */
+    border-top: 2px solid #edeef3;
+    border-bottom: 2px solid #edeef3;
+}
+nav ul li {
+    display: inline;    /* Sets lists to inlines so links go on the same line */
+    padding: 0 1.5em;    /* Provides spacing on the left & right of the links */
+}
+/* Sets font to bold & size to 125% for the appointment link to be more identifiable */
+#cita {
+    font-size: 125%;
+    font-weight: bold;
+}
+/* Link color of "aqua" when not visited */
 a:link {    color: aqua;    }
-/* Sets the font style to italic when focused */
-a:focus {    font-style: italic;    }
-/* Sets the font style to italic when hovered */
-a:hover {    font-style: italic;    }
 /* Link color of "Electric Purple" when visited */
 a:visited {    color: #BF00FF;    }
 /* Sets footer to the bottom middle of the page */
 footer p {
-    margin: 0;
-    width: 100%;
-    position: absolute;
-    bottom: 0;
     text-align: center;
+    position: relative;
+    margin-top: -1.5rem;    /* Moves footer upward into the main content */
+    height: 1.5rem;
+    clear: both;
 }
