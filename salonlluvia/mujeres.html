@@ -18,18 +18,90 @@
 </head>
 <body>
     <!-- Contains all the content except footer in order to keep the footer at the bottom of the page & from overlapping -->
-    <div id="container">
-        <header>    <!-- Contains the h1 for the "Mujeres" page & logo -->
-            <h1><a id="logo" href="index.html"><img src="images/scissors32px.png" alt="Salon Lluvia Logo"></a>Mujeres</h1>
+       <header>    <!-- Contains the h1 for the "Mujeres" page & logo -->
+            <a id="logo" href="index.html">
+                <img src="images/scissors32px.png" alt="Salon Lluvia Logo">
+            </a>
+            <h1>Mujeres</h1>
         </header>
         <nav>     <!-- Contains the links to appointments & "Hombres" page -->
             <ul>
                 <li><a id="cita" href="https://www.facebook.com/SalonLluvia">Concertar Cita</a></li>
                 <li><a href="hombres.html">Hombres</a></li>
+                <button title="Filtre" id="myBtn"><img src="images/filter32px.png" alt=""></button>
+                <!-- The Modal -->
+                <div id="myModal" class="modal">
+                    <!-- Modal content -->
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <a href="#close" title="Cerrar" class="close">&times;</a>
+                            <h2>Filtre</h2>
+                        </div>
+                        <div class="modal-body">
+                            <input type="checkbox" id="color1" name="color1" value="platinum">
+                            <label for="color1">Platinum</label><br>
+                            <input type="checkbox" id="color2" name="color2" value="rubio">
+                            <label for="color2">Rubio</label>
+                        </div>
+                        <div class="modal-footer">
+                            <input type="submit" value="Aplicar">
+                        </div>
+                    </div>
+                </div>
+                <script src="scripts/modal.js"></script>
             </ul>
         </nav>
-    </div>
-    <footer>    <!-- Sets the footer at the bottom of the page -->
+        <main>
+            <p>
+            <a rel="noreferrer" target="_blank" href="images/mujeres/platinum/platinum1_720x960.jpg">
+                <img src="images/mujeres/platinum/platinum1.jpg" alt="">
+            </a>
+            <a rel="noreferrer" target="_blank" href="images/mujeres/platinum/platinum2_526x585.jpg">
+                <img src="images/mujeres/platinum/platinum2.jpg" alt="">
+            </a>
+            <a rel="noreferrer" target="_blank" href="images/mujeres/rojo/rojo1_512x640.jpg">
+                <img src="images/mujeres/rojo/rojo1.jpg" alt="">
+            </a>
+            <img src="images/mujeres/platinum/platinum1.jpg" alt="">
+            <img src="images/mujeres/platinum/platinum1.jpg" alt="">
+            <img src="images/mujeres/platinum/platinum1.jpg" alt="">
+            <img src="images/mujeres/platinum/platinum1.jpg" alt="">
+            <img src="images/mujeres/platinum/platinum1.jpg" alt="">
+            <img src="images/mujeres/platinum/platinum1.jpg" alt="">
+            <img src="images/mujeres/platinum/platinum1.jpg" alt="">
+            <img src="images/mujeres/platinum/platinum1.jpg" alt="">
+            <img src="images/mujeres/platinum/platinum1.jpg" alt="">
+            <img src="images/mujeres/platinum/platinum1.jpg" alt="">
+            <img src="images/mujeres/platinum/platinum1.jpg" alt="">
+            <img src="images/mujeres/platinum/platinum1.jpg" alt="">
+            <img src="images/mujeres/platinum/platinum1.jpg" alt="">
+            <img src="images/mujeres/platinum/platinum1.jpg" alt="">
+            <img src="images/mujeres/platinum/platinum1.jpg" alt="">
+            <img src="images/mujeres/platinum/platinum1.jpg" alt="">
+            <img src="images/mujeres/platinum/platinum1.jpg" alt="">
+            <img src="images/mujeres/platinum/platinum1.jpg" alt="">
+            <img src="images/mujeres/platinum/platinum1.jpg" alt="">
+            <img src="images/mujeres/platinum/platinum1.jpg" alt="">
+            <img src="images/mujeres/platinum/platinum1.jpg" alt="">
+            <img src="images/mujeres/platinum/platinum1.jpg" alt="">
+            <img src="images/mujeres/platinum/platinum1.jpg" alt="">
+            <img src="images/mujeres/platinum/platinum1.jpg" alt="">
+            <img src="images/mujeres/platinum/platinum1.jpg" alt="">
+            <img src="images/mujeres/platinum/platinum1.jpg" alt="">
+            <img src="images/mujeres/platinum/platinum1.jpg" alt="">
+            <img src="images/mujeres/platinum/platinum1.jpg" alt="">
+            <img src="images/mujeres/platinum/platinum1.jpg" alt="">
+            <img src="images/mujeres/platinum/platinum1.jpg" alt="">
+            <img src="images/mujeres/platinum/platinum1.jpg" alt="">
+            <img src="images/mujeres/platinum/platinum1.jpg" alt="">
+            <img src="images/mujeres/platinum/platinum1.jpg" alt="">
+            <img src="images/mujeres/platinum/platinum1.jpg" alt="">
+            <img src="images/mujeres/platinum/platinum1.jpg" alt="">
+            <img src="images/mujeres/platinum/platinum1.jpg" alt="">
+            <img src="images/mujeres/platinum/platinum1.jpg" alt="">
+            </p>
+        </main>
+    <footer>
         <p>
             <small id="credit">
                 Icons made by <a href="https://www.freepik.com" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a>
