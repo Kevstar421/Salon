@@ -7,6 +7,9 @@
     <title>Salón Lluvia - Mujeres</title>
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/mujeres.css">
+    <link rel="stylesheet" href="styles/lightbox.min.css">
+    <link rel="stylesheet" href="styles/lightbox.css">
+    <script src="scripts/lightbox-plus-jquery.min.js"></script>
     <link rel="icon" href="favicon.ico">
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
@@ -30,21 +33,22 @@
                 <li><a href="hombres.html">Hombres</a></li>
                 <button title="Filtre" id="myBtn"><img src="images/filter32px.png" alt=""></button>
                 <!-- The Modal -->
-                <div id="myModal" class="modal">
+                <div id="myBtnModal" class="modal">
                     <!-- Modal content -->
-                    <div class="modal-content">
+                    <div class="modalBtnContent">
                         <div class="modal-header">
-                            <a href="#close" title="Cerrar" class="close">&times;</a>
+                            <a href="#closeBtn" title="Cerrar" class="closeBtn">&times;</a>
                             <h2>Filtre</h2>
                         </div>
-                        <div class="modal-body">
-                            <input type="checkbox" id="color1" name="color1" value="platinum">
-                            <label for="color1">Platinum</label><br>
-                            <input type="checkbox" id="color2" name="color2" value="rubio">
-                            <label for="color2">Rubio</label>
-                        </div>
-                        <div class="modal-footer">
-                            <input type="submit" value="Aplicar">
+                        <div id="myBtnContainer">
+                           <p>
+                            <button class="btn active" onclick="filterSelection('all')">Todos</button><br>
+                            <button class="btn" onclick="filterSelection('peinados')"> Peinados</button>
+                            <button class="btn" onclick="filterSelection('platinum')"> Platinum</button>
+                            <button class="btn" onclick="filterSelection('rojo')"> Rojo</button>
+                            <button class="btn" onclick="filterSelection('rubio')"> Rubio</button>
+                            <button class="btn" onclick="filterSelection('trensas')"> Trensas</button>
+                            </p>
                         </div>
                     </div>
                 </div>
@@ -52,54 +56,76 @@
             </ul>
         </nav>
         <main>
-            <p>
-            <a rel="noreferrer" target="_blank" href="images/mujeres/platinum/platinum1_720x960.jpg">
-                <img src="images/mujeres/platinum/platinum1.jpg" alt="">
+            <div class="gallery">
+            <a rel="noreferrer" target="_blank" data-lightbox="myGallary" href="images/mujeres/rubio/rubio5_1536x2048.jpg">
+                <img class="filterDiv rubio" src="images/mujeres/rubio/rubio5_360x480.jpg" alt="">
             </a>
-            <a rel="noreferrer" target="_blank" href="images/mujeres/platinum/platinum2_526x585.jpg">
-                <img src="images/mujeres/platinum/platinum2.jpg" alt="">
+                
+            <a rel="noreferrer" target="_blank" data-lightbox="myGallary" href="images/mujeres/rubio/rubio6_526x585.jpg">
+                <img class="filterDiv rubio"src="images/mujeres/rubio/rubio6_360x480.jpg" alt="">
             </a>
-            <a rel="noreferrer" target="_blank" href="images/mujeres/rojo/rojo1_512x640.jpg">
-                <img src="images/mujeres/rojo/rojo1.jpg" alt="">
+                
+            <a rel="noreferrer" target="_blank" data-lightbox="myGallary" href="images/mujeres/rubio/rubio4_1536x2048.jpg">
+                <img class="filterDiv rubio"src="images/mujeres/rubio/rubio4_360x480.jpg" alt="">
             </a>
-            <img src="images/mujeres/platinum/platinum1.jpg" alt="">
-            <img src="images/mujeres/platinum/platinum1.jpg" alt="">
-            <img src="images/mujeres/platinum/platinum1.jpg" alt="">
-            <img src="images/mujeres/platinum/platinum1.jpg" alt="">
-            <img src="images/mujeres/platinum/platinum1.jpg" alt="">
-            <img src="images/mujeres/platinum/platinum1.jpg" alt="">
-            <img src="images/mujeres/platinum/platinum1.jpg" alt="">
-            <img src="images/mujeres/platinum/platinum1.jpg" alt="">
-            <img src="images/mujeres/platinum/platinum1.jpg" alt="">
-            <img src="images/mujeres/platinum/platinum1.jpg" alt="">
-            <img src="images/mujeres/platinum/platinum1.jpg" alt="">
-            <img src="images/mujeres/platinum/platinum1.jpg" alt="">
-            <img src="images/mujeres/platinum/platinum1.jpg" alt="">
-            <img src="images/mujeres/platinum/platinum1.jpg" alt="">
-            <img src="images/mujeres/platinum/platinum1.jpg" alt="">
-            <img src="images/mujeres/platinum/platinum1.jpg" alt="">
-            <img src="images/mujeres/platinum/platinum1.jpg" alt="">
-            <img src="images/mujeres/platinum/platinum1.jpg" alt="">
-            <img src="images/mujeres/platinum/platinum1.jpg" alt="">
-            <img src="images/mujeres/platinum/platinum1.jpg" alt="">
-            <img src="images/mujeres/platinum/platinum1.jpg" alt="">
-            <img src="images/mujeres/platinum/platinum1.jpg" alt="">
-            <img src="images/mujeres/platinum/platinum1.jpg" alt="">
-            <img src="images/mujeres/platinum/platinum1.jpg" alt="">
-            <img src="images/mujeres/platinum/platinum1.jpg" alt="">
-            <img src="images/mujeres/platinum/platinum1.jpg" alt="">
-            <img src="images/mujeres/platinum/platinum1.jpg" alt="">
-            <img src="images/mujeres/platinum/platinum1.jpg" alt="">
-            <img src="images/mujeres/platinum/platinum1.jpg" alt="">
-            <img src="images/mujeres/platinum/platinum1.jpg" alt="">
-            <img src="images/mujeres/platinum/platinum1.jpg" alt="">
-            <img src="images/mujeres/platinum/platinum1.jpg" alt="">
-            <img src="images/mujeres/platinum/platinum1.jpg" alt="">
-            <img src="images/mujeres/platinum/platinum1.jpg" alt="">
-            <img src="images/mujeres/platinum/platinum1.jpg" alt="">
-            <img src="images/mujeres/platinum/platinum1.jpg" alt="">
-            <img src="images/mujeres/platinum/platinum1.jpg" alt="">
-            </p>
+                
+            <a rel="noreferrer" target="_blank" data-lightbox="myGallary" href="images/mujeres/rojo/rojo1_512x640.jpg">
+                <img class="filterDiv rojo"src="images/mujeres/rojo/rojo1_360x480.jpg" alt="">
+            </a>
+                
+                
+      
+            <a rel="noreferrer" target="_blank" data-lightbox="myGallary" href="images/mujeres/rubio/rubio1_1536x2048.jpg">
+                <img class="filterDiv rubio" src="images/mujeres/rubio/rubio1_360x480.jpg" alt="">
+            </a>
+            <a rel="noreferrer" target="_blank" data-lightbox="myGallary" href="images/mujeres/rubio/ondulado/rubio1_1536x2048.jpg">
+                <img class="filterDiv rubio ondulado" src="images/mujeres/rubio/ondulado/rubio1_360x480.jpg" alt="">
+            </a>
+            <a rel="noreferrer" target="_blank" data-lightbox="myGallary" href="images/mujeres/rubio/ondulado/rubio2(1)_1440x1440.jpg">
+                <img class="filterDiv rubio ondulado" src="images/mujeres/rubio/ondulado/rubio2(1)_360x480.jpg" alt="">
+            </a>
+            <a rel="noreferrer" target="_blank" data-lightbox="myGallary" href="images/mujeres/rubio/ondulado/rubio2(2)_1536x2048.jpg">
+                <img class="filterDiv rubio ondulado" src="images/mujeres/rubio/ondulado/rubio2(2)_360x480.jpg" alt="">
+            </a>
+            <a rel="noreferrer" target="_blank" data-lightbox="myGallary" href="images/mujeres/rubio/rubio7(1)_1536x2048.jpg">
+                <img class="filterDiv rubio" src="images/mujeres/rubio/rubio7(1)_360x480.jpg" alt="">
+            </a>
+            <a rel="noreferrer" target="_blank" data-lightbox="myGallary" href="images/mujeres/rubio/rubio7(2)_1536x2048.jpg">
+                <img class="filterDiv rubio" src="images/mujeres/rubio/rubio7(2)_360x480.jpg" alt="">
+            </a>
+            <a rel="noreferrer" target="_blank" data-lightbox="myGallary" href="images/mujeres/rubio/ondulado/rubio3_750x750.jpg">
+                <img class="filterDiv rubio" src="images/mujeres/rubio/ondulado/rubio3_360x480.jpg" alt="">
+            </a>
+            <a rel="noreferrer" target="_blank" data-lightbox="myGallary" href="images/mujeres/rubio/rubio9_750x1000.jpg">
+                <img class="filterDiv rubio peinados trensas" src="images/mujeres/rubio/rubio9_360x480.jpg" alt="">
+            </a>
+            <a rel="noreferrer" target="_blank" data-lightbox="myGallary" href="images/mujeres/platinum/ondulado/platinum1_750x1000.jpg">
+                <img class="filterDiv platinum" src="images/mujeres/platinum/ondulado/platinum1_360x480.jpg" alt="">
+            </a>
+            <a rel="noreferrer" target="_blank" data-lightbox="myGallary" href="images/mujeres/platinum/platinum1_750x1000.jpg">
+                <img class="filterDiv platinum" src="images/mujeres/platinum/platinum1_360x480.jpg" alt="">
+            </a>
+            <a rel="noreferrer" target="_blank" data-lightbox="myGallary" href="images/mujeres/rubio/rubio10_750x1000.jpg">
+                <img class="filterDiv rubio" src="images/mujeres/rubio/rubio10_360x480.jpg" alt="">
+            </a>
+            <a rel="noreferrer" target="_blank" data-lightbox="myGallary" href="images/mujeres/rojo/ondulado/rojo1(1)_721x921.jpg">
+                <img class="filterDiv rojo ondulado" src="images/mujeres/rojo/ondulado/rojo1(1)_360x480.jpg" alt="">
+            </a>
+            <a rel="noreferrer" target="_blank" data-lightbox="myGallary" href="images/mujeres/rojo/ondulado/rojo1(2)_750x1000.jpg">
+                <img class="filterDiv rojo ondulado" src="images/mujeres/rojo/ondulado/rojo1(2)_360x480.jpg" alt="">
+            </a>
+            <a rel="noreferrer" target="_blank" data-lightbox="myGallary" href="images/mujeres/rojo/peinado/rojo1_749x909.jpg">
+                <img class="filterDiv rojo peinados" src="images/mujeres/rojo/peinado/rojo1_360x480.jpg" alt="">
+            </a>
+            <a rel="noreferrer" target="_blank" data-lightbox="myGallary" href="images/mujeres/rojo/ondulado/rojo2_1536x2048.jpg">
+                <img class="filterDiv rojo ondulado" src="images/mujeres/rojo/ondulado/rojo2_360x480.jpg" alt="">
+            </a>
+            <a rel="noreferrer" target="_blank" data-lightbox="myGallary" href="images/mujeres/rojo/rojo2_750x1333.jpg">
+                <img class="filterDiv rojo" src="images/mujeres/rojo/rojo2_360x480.jpg" alt="">
+            </a>
+            </div>
+
+            <script src="scripts/filter.js"></script>
         </main>
     <footer>
         <p>
