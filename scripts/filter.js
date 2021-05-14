@@ -1,15 +1,12 @@
 filterSelection("all")
 function filterSelection(c) {
-  var x, i,filtered_elements;
+  var x, i;
   x = document.getElementsByClassName("filterDiv");
+  if (c == "all") c = "";
   for (i = 0; i < x.length; i++) {
     w3RemoveClass(x[i], "show");
-    if (x[i].className.indexOf(c) > -1){ 
-        w3AddClass(x[i], "show")
-        filtered_elements.push(x[i]);
-    }   
+    if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
   }
-  lightbox.setElements(filtered_elements);
 }
 
 function w3AddClass(element, name) {
