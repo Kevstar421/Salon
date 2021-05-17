@@ -31,12 +31,9 @@ nav ul li {
     display: inline;    /* Sets lists to inlines so links go on the same line */
     padding: 0 .124em;    /* Provides spacing on the left & right of the links */
 }
-nav ul li a img {    vertical-align:middle}
+nav ul li a img {    vertical-align:middle;    }
 #icons a {    text-decoration: none;    }
-#instagram {
-    height: 2rem;
-    margin-right: 0em
-}
+#instagram {    height: 2rem;    }
 #gmail {    height: 2rem;    }
 /* Sets font to bold & size to 125% for the appointment link to be more identifiable */
 #cita {
