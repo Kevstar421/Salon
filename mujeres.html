@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1">
     <meta name="description" content="Peinados de mujeres">
     <meta name="keywords" content="Salón lluvia, Salon lluvia, Peinados de mujeres, Peinados, Womens hairstyles, Hairstyles">
     <title>Salón Lluvia - Mujeres</title>
@@ -19,117 +20,896 @@
 </head>
 <body>
     <!-- Contains all the content except footer in order to keep the footer at the bottom of the page & from overlapping -->
-
+       <header>    <!-- Contains the h1 for the "Mujeres" page & logo -->
+            <a id="logo" href="index.html">
+                <img src="images/scissors32px.png" alt="Salon Lluvia Logo">
+            </a>
+            <h1>Mujeres</h1>
+        </header>
         <nav>     <!-- Contains the link to appointments & filter button -->
             <ul>
-                <button title="Filtre" id="myBtn"><img src="images/filter32px.png" alt=""></button>
-                <!-- The Modal -->
-                <div id="myBtnModal" class="modal">
-                    <!-- Modal content -->
-                    <div class="modalBtnContent">
-                        <div class="modal-header">
-                            <a href="#closeBtn" title="Cerrar" class="closeBtn">&times;</a>
-                            <h2>Filtre</h2>
-                        </div>
-                        <div id="myBtnContainer">
-                           <p>
-                            <button class="btn active" onclick="filterSelection('all')">Todos</button><br>
-                            <button class="btn" onclick="filterSelection('azul')"> Azul</button>
-                            <button class="btn" onclick="filterSelection('mecha')"> Mechas</button>
-                            <button class="btn" onclick="filterSelection('morado')"> Morado</button>
-                            <button class="btn" onclick="filterSelection('negro')"> Negro</button>
-                            <button class="btn" onclick="filterSelection('ondulado')"> Ondulado</button>
-                            <button class="btn" onclick="filterSelection('peinado')"> Peinados</button>
-                            <button class="btn" onclick="filterSelection('platinum')"> Platinum</button>
-                            <button class="btn" onclick="filterSelection('rallito')"> Rallitos</button>
-                            <button class="btn" onclick="filterSelection('rojo')"> Rojo</button>
-                            <button class="btn" onclick="filterSelection('rosa')"> Rosa</button>
-                            <button class="btn" onclick="filterSelection('rubio')"> Rubio</button>
-                            <button class="btn" onclick="filterSelection('trensas')"> Trensas</button>
-                            <button class="btn" onclick="filterSelection('video')"> Videos</button>
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                <script src="scripts/modal.js"></script>
-            </ul>
-        </nav>
+                <li><a id="cita" href="https://www.facebook.com/SalonLluvia">Concertar Cita</a></li>
+                <button title="Filtre" id="myBtn">
+          <img src="images/filter32px.png" alt="" />
+        </button>
+        <!-- The Modal -->
+        <div id="myBtnModal" class="modal">
+          <!-- Modal content -->
+          <div class="modalBtnContent">
+            <div class="modal-header">
+              <a href="#closeBtn" title="Cerrar" class="closeBtn">&times;</a>
+              <h2>Filtre</h2>
+            </div>
+            <div id="myBtnContainer">
+              <p>
+                <button class="btn active" onclick="filterSelection('todos')">
+                  Todos</button
+                ><br />
+                <button class="btn" onclick="filterSelection('azul')">
+                  Azul
+                </button>
+                <button class="btn" onclick="filterSelection('mecha')">
+                  Mechas
+                </button>
+                <button class="btn" onclick="filterSelection('morado')">
+                  Morado
+                </button>
+                <button class="btn" onclick="filterSelection('negro')">
+                  Negro
+                </button>
+                <button class="btn" onclick="filterSelection('ondulado')">
+                  Ondulado
+                </button>
+                <button class="btn" onclick="filterSelection('peinado')">
+                  Peinados
+                </button>
+                <button class="btn" onclick="filterSelection('platinum')">
+                  Platinum
+                </button>
+                <button class="btn" onclick="filterSelection('rallitos')">
+                  Rallitos
+                </button>
+                <button class="btn" onclick="filterSelection('rojo')">
+                  Rojo
+                </button>
+                <button class="btn" onclick="filterSelection('rosa')">
+                  Rosa
+                </button>
+                <button class="btn" onclick="filterSelection('rubio')">
+                  Rubio
+                </button>
+                <button class="btn" onclick="filterSelection('trensas')">
+                  Trensas
+                </button>
+                <button class="btn" onclick="filterSelection('video')">
+                  Videos
+                </button>
+              </p>
+            </div>
+          </div>
+        </div>
+        <script src="scripts/modal.js"></script>
+      </ul>
+    </nav>
         <main>
             <div class="gallery">
-            <a rel="noreferrer" class="glightbox" data-glightbox="title: My title; description: this is the slide description" href="videos/mujeres/azul/azul1.mp4">
-                <img class="filterDiv video azul" src="images/mujeres/azul/azul1_360x480.png" alt="">
-            </a>
-            <a rel="noreferrer" class="glightbox" data-glightbox="title: My title; description: this is the slide description" href="images/mujeres/rubio/rubio3_1536x2048.jpg">
-                <img class="filterDiv rubio" src="images/mujeres/rubio/rubio3_360x480.jpg" alt="">
-            </a>
-            <a rel="noreferrer" class="glightbox" data-glightbox="title: My title; description: this is the slide description" href="images/mujeres/rubio/rubio4_526x585.jpg">
-                <img class="filterDiv rubio" src="images/mujeres/rubio/rubio4_360x480.jpg" alt="">
-            </a>
-            <a rel="noreferrer" class="glightbox" data-glightbox="title: My title; description: this is the slide description" href="images/mujeres/rubio/rubio2_1536x2048.jpg">
-                <img class="filterDiv rubio" src="images/mujeres/rubio/rubio2_360x480.jpg" alt="">
-            </a>
-            <a rel="noreferrer" class="glightbox" data-glightbox="title: My title; description: this is the slide description" href="images/mujeres/rojo/rojo1_512x640.jpg">
-                <img class="filterDiv rojo" src="images/mujeres/rojo/rojo1_360x480.jpg" alt="">
-            </a>
-            <a rel="noreferrer" class="glightbox" data-glightbox="title: My title; description: this is the slide description" href="images/mujeres/rubio/rubio1_1536x2048.jpg">
-                <img class="filterDiv rubio" src="images/mujeres/rubio/rubio1_360x480.jpg" alt="">
-            </a>
-            <a rel="noreferrer" class="glightbox" data-glightbox="title: My title; description: this is the slide description" href="images/mujeres/rubio/ondulado/ondulado1_1536x2048.jpg">
-                <img class="filterDiv rubio ondulado" src="images/mujeres/rubio/ondulado/ondulado1_360x480.jpg" alt="">
-            </a>
-            <a rel="noreferrer" class="glightbox" data-glightbox="title: My title; description: this is the slide description" href="images/mujeres/rubio/ondulado/ondulado2(1)_1440x1440.jpg">
-                <img class="filterDiv rubio ondulado" src="images/mujeres/rubio/ondulado/ondulado2(1)_360x480.jpg" alt="">
-            </a>
-            <a rel="noreferrer" class="glightbox" data-glightbox="title: My title; description: this is the slide description" href="images/mujeres/rubio/ondulado/ondulado2(2)_1536x2048.jpg">
-                <img class="filterDiv rubio ondulado" src="images/mujeres/rubio/ondulado/ondulado2(2)_360x480.jpg" alt="">
-            </a>
-            <a rel="noreferrer" class="glightbox" data-glightbox="title: My title; description: this is the slide description" href="images/mujeres/rubio/rubio5(2)_1536x2048.jpg">
-                <img class="filterDiv rubio" src="images/mujeres/rubio/rubio5(2)_360x480.jpg" alt="">
-            </a>
-            <a rel="noreferrer" class="glightbox" data-glightbox="title: My title; description: this is the slide description" href="images/mujeres/rubio/ondulado/ondulado3_750x750.jpg">
-                <img class="filterDiv ondulado rubio" src="images/mujeres/rubio/ondulado/ondulado3_360x480.jpg" alt="">
-            </a>
-            <a rel="noreferrer" class="glightbox" data-glightbox="title: My title; description: this is the slide description" href="images/mujeres/rubio/rubio6_750x1000.jpg">
-                <img class="filterDiv rubio peinado trensas" src="images/mujeres/rubio/rubio6_360x480.jpg" alt="">
-            </a>
-            <a rel="noreferrer" class="glightbox" data-glightbox="title: My title; description: this is the slide description" href="images/mujeres/platinum/ondulado/ondulado1_750x1000.jpg">
-                <img class="filterDiv ondulado platinum" src="images/mujeres/platinum/ondulado/ondulado1_360x480.jpg" alt="">
-            </a>
+        <a
+          rel="noreferrer"
+          class="glightbox filterDiv todos rubio"
+          data-glightbox="title: My title; description: this is the slide description"
+          href="images/mujeres/rubio/rubio3_1536x2048.jpg"
+        >
+          <img src="images/mujeres/rubio/rubio3_360x480.jpg" alt="" />
+        </a>
+        <a
+          rel="noreferrer"
+          class="glightbox filterDiv todos rubio"
+          data-glightbox="title: My title; description: this is the slide description"
+          href="images/mujeres/rubio/rubio4_526x585.jpg"
+        >
+          <img src="images/mujeres/rubio/rubio4_360x480.jpg" alt="" />
+        </a>
+        <a
+          rel="noreferrer"
+          class="glightbox filterDiv todos rubio"
+          data-glightbox="title: My title; description: this is the slide description"
+          href="images/mujeres/rubio/rubio2_1536x2048.jpg"
+        >
+          <img src="images/mujeres/rubio/rubio2_360x480.jpg" alt="" />
+        </a>
+        <a
+          rel="noreferrer"
+          class="glightbox filterDiv todos rojo"
+          data-glightbox="title: My title; description: this is the slide description"
+          href="images/mujeres/rojo/rojo1_512x640.jpg"
+        >
+          <img class="" src="images/mujeres/rojo/rojo1_360x480.jpg" alt="" />
+        </a>
+        <a
+          rel="noreferrer"
+          class="glightbox filterDiv todos rubio"
+          data-glightbox="title: My title; description: this is the slide description"
+          href="images/mujeres/rubio/rubio1_1536x2048.jpg"
+        >
+          <img src="images/mujeres/rubio/rubio1_360x480.jpg" alt="" />
+        </a>
+        <a
+          rel="noreferrer"
+          class="glightbox filterDiv rubio todos ondulado"
+          data-glightbox="title: My title; description: this is the slide description"
+          href="images/mujeres/rubio/ondulado/ondulado1_1536x2048.jpg"
+        >
+          <img
+            src="images/mujeres/rubio/ondulado/ondulado1_360x480.jpg"
+            alt=""
+          />
+        </a>
+        <a
+          rel="noreferrer"
+          class="glightbox filterDiv rubio todos ondulado"
+          data-glightbox="title: My title; description: this is the slide description"
+          href="images/mujeres/rubio/ondulado/ondulado2(1)_1440x1440.jpg"
+        >
+          <img
+            src="images/mujeres/rubio/ondulado/ondulado2(1)_360x480.jpg"
+            alt=""
+          />
+        </a>
+        <a
+          rel="noreferrer"
+          class="glightbox filterDiv rubio todos ondulado"
+          data-glightbox="title: My title; description: this is the slide description"
+          href="images/mujeres/rubio/ondulado/ondulado2(2)_1536x2048.jpg"
+        >
+          <img
+            src="images/mujeres/rubio/ondulado/ondulado2(2)_360x480.jpg"
+            alt=""
+          />
+        </a>
+        <a
+          rel="noreferrer"
+          class="glightbox filterDiv todos rubio"
+          data-glightbox="title: My title; description: this is the slide description"
+          href="images/mujeres/rubio/rubio5(2)_1536x2048.jpg"
+        >
+          <img src="images/mujeres/rubio/rubio5(2)_360x480.jpg" alt="" />
+        </a>
+        <a
+          rel="noreferrer"
+          class="glightbox filterDiv ondulado todos rubio"
+          data-glightbox="title: My title; description: this is the slide description"
+          href="images/mujeres/rubio/ondulado/ondulado3_750x750.jpg"
+        >
+          <img
+            src="images/mujeres/rubio/ondulado/ondulado3_360x480.jpg"
+            alt=""
+          />
+        </a>
+        <a
+          rel="noreferrer"
+          class="glightbox filterDiv rubio todos peinado trensas"
+          data-glightbox="title: My title; description: this is the slide description"
+          href="images/mujeres/rubio/rubio6_750x1000.jpg"
+        >
+          <img src="images/mujeres/rubio/rubio6_360x480.jpg" alt="" />
+        </a>
+        <a
+          rel="noreferrer"
+          class="glightbox filterDiv ondulado todos platinum"
+          data-glightbox="title: My title; description: this is the slide description"
+          href="images/mujeres/platinum/ondulado/ondulado1_750x1000.jpg"
+        >
+          <img
+            src="images/mujeres/platinum/ondulado/ondulado1_360x480.jpg"
+            alt=""
+          />
+        </a>
 
-            <a rel="noreferrer" class="glightbox" data-glightbox="title: My title; description: this is the slide description" href="images/mujeres/rubio/rubio7_750x1000.jpg">
-                <img class="filterDiv rubio" src="images/mujeres/rubio/rubio7_360x480.jpg" alt="">
-            </a>
-            <a rel="noreferrer" class="glightbox" data-glightbox="title: My title; description: this is the slide description" href="images/mujeres/rojo/ondulado/ondulado1(1)_721x921.jpg">
-                <img class="filterDiv rojo ondulado" src="images/mujeres/rojo/ondulado/ondulado1(1)_360x480.jpg" alt="">
-            </a>
-            <a rel="noreferrer" class="glightbox" data-glightbox="title: My title; description: this is the slide description" href="images/mujeres/rojo/ondulado/ondulado1(2)_750x1000.jpg">
-                <img class="filterDiv rojo ondulado" src="images/mujeres/rojo/ondulado/ondulado1(2)_360x480.jpg" alt="">
-            </a>
-            <a rel="noreferrer" class="glightbox" data-glightbox="title: My title; description: this is the slide description" href="images/mujeres/rojo/peinado/peinado1_749x909.jpg">
-                <img class="filterDiv rojo peinado" src="images/mujeres/rojo/peinado/peinado1_360x480.jpg" alt="">
-            </a>
-            <a rel="noreferrer" class="glightbox" data-glightbox="title: My title; description: this is the slide description" href="images/mujeres/rojo/ondulado/ondulado2_1536x2048.jpg">
-                <img class="filterDiv rojo ondulado" src="images/mujeres/rojo/ondulado/ondulado2_360x480.jpg" alt="">
-            </a>
+        <a
+          rel="noreferrer"
+          class="glightbox filterDiv todos rubio"
+          data-glightbox="title: My title; description: this is the slide description"
+          href="images/mujeres/rubio/rubio7_750x1000.jpg"
+        >
+          <img src="images/mujeres/rubio/rubio7_360x480.jpg" alt="" />
+        </a>
+        <a
+          rel="noreferrer"
+          class="glightbox filterDiv rojo todos ondulado"
+          data-glightbox="title: My title; description: this is the slide description"
+          href="images/mujeres/rojo/ondulado/ondulado1(1)_721x921.jpg"
+        >
+          <img
+            src="images/mujeres/rojo/ondulado/ondulado1(1)_360x480.jpg"
+            alt=""
+          />
+        </a>
+        <a
+          rel="noreferrer"
+          class="glightbox filterDiv rojo todos ondulado"
+          data-glightbox="title: My title; description: this is the slide description"
+          href="images/mujeres/rojo/ondulado/ondulado1(2)_750x1000.jpg"
+        >
+          <img
+            src="images/mujeres/rojo/ondulado/ondulado1(2)_360x480.jpg"
+            alt=""
+          />
+        </a>
+        <a
+          rel="noreferrer"
+          class="glightbox filterDiv rojo todos peinado"
+          data-glightbox="title: My title; description: this is the slide description"
+          href="images/mujeres/rojo/peinado/peinado1_749x909.jpg"
+        >
+          <img src="images/mujeres/rojo/peinado/peinado1_360x480.jpg" alt="" />
+        </a>
+        <a
+          rel="noreferrer"
+          class="glightbox filterDiv rojo todos ondulado"
+          data-glightbox="title: My title; description: this is the slide description"
+          href="images/mujeres/rojo/ondulado/ondulado2_1536x2048.jpg"
+        >
+          <img
+            src="images/mujeres/rojo/ondulado/ondulado2_360x480.jpg"
+            alt=""
+          />
+        </a>
 
-            <a rel="noreferrer" class="glightbox" data-glightbox="title: My title; description: this is the slide description" href="images/mujeres/rojo/rojo3(2)_750x1000.jpg">
-                <img class="filterDiv rojo" src="images/mujeres/rojo/rojo3(2)_360x480.jpg" alt="">
-            </a>
-            <a rel="noreferrer" class="glightbox" data-glightbox="title: My title; description: this is the slide description" href="videos/mujeres/rojo/trensas/trensas1.mp4">
-                <img class="filterDiv rojo trensas video" src="images/mujeres/rojo/trensas/trensas1_360x480.png" alt="">
-            </a>
-            </div>
-            <script src="scripts/glightbox.min.js"></script>
-            <script type="text/javascript">
-                const lightbox = GLightbox({ loop: true });
-            </script>
-            <script src="scripts/filter.js"></script>
-        </main>
+        <a
+          rel="noreferrer"
+          class="glightbox filterDiv todos rojo"
+          data-glightbox="title: My title; description: this is the slide description"
+          href="images/mujeres/rojo/rojo2_750x1333.jpg"
+        >
+          <img src="images/mujeres/rojo/rojo2_360x480.jpg" alt="" />
+        </a>
+        <a
+          rel="noreferrer"
+          class="glightbox filterDiv rojo todos trensas video"
+          data-glightbox="title: My title; description: this is the slide description"
+          href="videos/mujeres/rojo/trensas/trensas1.mp4"
+        >
+          <img src="images/mujeres/rojo/trensas/trensas1_360x480.png" alt="" />
+        </a>
+        <a
+          rel="noreferrer"
+          class="glightbox filterDiv rojo todos video"
+          data-glightbox="title: My title; description: this is the slide description"
+          href="videos/mujeres/rojo/rojo1.mp4"
+        >
+          <img src="images/mujeres/rojo/rojo4_360x480.png" alt="" />
+        </a>
+        <a
+          rel="noreferrer"
+          class="glightbox filterDiv video todos azul"
+          data-glightbox="title: My title; description: this is the slide description"
+          href="videos/mujeres/azul/azul1.mp4"
+        >
+          <img src="images/mujeres/azul/azul1_360x480.png" alt="" />
+        </a>
+        <a
+          rel="noreferrer"
+          class="glightbox filterDiv todos azul"
+          data-glightbox="title: My title; description: this is the slide description"
+          href="images/mujeres/azul/azul2(1)_750x1334.jpg"
+        >
+          <img src="images/mujeres/azul/azul2(1)_360x480.jpg" alt="" />
+        </a>
+        <a
+          rel="noreferrer"
+          class="glightbox filterDiv todos azul"
+          data-glightbox="title: My title; description: this is the slide description"
+          href="images/mujeres/azul/azul2(2)_750x931.jpg"
+        >
+          <img src="images/mujeres/azul/azul2(2)_360x480.jpg" alt="" />
+        </a>
+        <a
+          rel="noreferrer"
+          class="glightbox filterDiv todos azul"
+          data-glightbox="title: My title; description: this is the slide description"
+          href="images/mujeres/azul/azul3_750x1334.jpg"
+        >
+          <img src="images/mujeres/azul/azul3_360x480.jpg" alt="" />
+        </a>
+        <a
+          rel="noreferrer"
+          class="glightbox filterDiv todos morado"
+          data-glightbox="title: My title; description: this is the slide description"
+          href="images/mujeres/morado/morado1_750x1000.jpg"
+        >
+          <img src="images/mujeres/morado/morado1_360x480.jpg" alt="" />
+        </a>
+        <a
+          rel="noreferrer"
+          class="glightbox filterDiv todos negro"
+          data-glightbox="title: My title; description: this is the slide description"
+          href="images/mujeres/negro/negro1_750x1000.jpg"
+        >
+          <img src="images/mujeres/negro/negro1_360x480.jpg" alt="" />
+        </a>
+        <a
+          rel="noreferrer"
+          class="glightbox filterDiv todos ondulado"
+          data-glightbox="title: My title; description: this is the slide description"
+          href="images/mujeres/ondulado/ondulado1_750x1000.jpg"
+        >
+          <img src="images/mujeres/ondulado/ondulado1_360x480.jpg" alt="" />
+        </a>
+        <a
+          rel="noreferrer"
+          class="glightbox filterDiv todos peinado negro"
+          data-glightbox="title: My title; description: this is the slide description"
+          href="images/mujeres/peinado/peinado7_1536x2048.jpg"
+        >
+          <img src="images/mujeres/peinado/peinado7_360x480.jpg" alt="" />
+        </a>
+        <a
+          rel="noreferrer"
+          class="glightbox filterDiv todos peinado negro"
+          data-glightbox="title: My title; description: this is the slide description"
+          href="images/mujeres/peinado/peinado8_750x1000.jpg"
+        >
+          <img src="images/mujeres/peinado/peinado8_360x480.jpg" alt="" />
+        </a>
+        <a
+          rel="noreferrer"
+          class="glightbox filterDiv todos ondulado"
+          data-glightbox="title: My title; description: this is the slide description"
+          href="images/mujeres/ondulado/ondulado2_750x1000.jpg"
+        >
+          <img src="images/mujeres/ondulado/ondulado2_360x480.jpg" alt="" />
+        </a>
+        <a
+          rel="noreferrer"
+          class="glightbox filterDiv todos ondulado"
+          data-glightbox="title: My title; description: this is the slide description"
+          href="images/mujeres/ondulado/ondulado3_1536x2048.jpg"
+        >
+          <img src="images/mujeres/ondulado/ondulado3_360x480.jpg" alt="" />
+        </a>
+        <a
+          rel="noreferrer"
+          class="glightbox filterDiv todos ondulado rallitos"
+          data-glightbox="title: My title; description: this is the slide description"
+          href="images/mujeres/ondulado/ondulado4_750x1000.jpg"
+        >
+          <img src="images/mujeres/ondulado/ondulado4_360x480.jpg" alt="" />
+        </a>
+        <a
+          rel="noreferrer"
+          class="glightbox filterDiv todos ondulado"
+          data-glightbox="title: My title; description: this is the slide description"
+          href="images/mujeres/ondulado/ondulado5_750x1000.jpg"
+        >
+          <img src="images/mujeres/ondulado/ondulado5_360x480.jpg" alt="" />
+        </a>
+        <a
+          rel="noreferrer"
+          class="glightbox filterDiv todos peinado"
+          data-glightbox="title: My title; description: this is the slide description"
+          href="images/mujeres/peinado/peinado1(1)_750x1334.jpg"
+        >
+          <img src="images/mujeres/peinado/peinado1(1)_360x480.jpg" alt="" />
+        </a>
+        <a
+          rel="noreferrer"
+          class="glightbox filterDiv todos peinado"
+          data-glightbox="title: My title; description: this is the slide description"
+          href="images/mujeres/peinado/peinado1(2)_750x1334.jpg"
+        >
+          <img src="images/mujeres/peinado/peinado1(2)_360x480.jpg" alt="" />
+        </a>
+        <a
+          rel="noreferrer"
+          class="glightbox filterDiv todos peinado"
+          data-glightbox="title: My title; description: this is the slide description"
+          href="images/mujeres/peinado/peinado2_750x1000.jpg"
+        >
+          <img src="images/mujeres/peinado/peinado2_360x480.jpg" alt="" />
+        </a>
+        <a
+          rel="noreferrer"
+          class="glightbox filterDiv todos peinado"
+          data-glightbox="title: My title; description: this is the slide description"
+          href="images/mujeres/peinado/peinado3(1)_750x1000.jpg"
+        >
+          <img src="images/mujeres/peinado/peinado3(1)_360x480.jpg" alt="" />
+        </a>
+        <a
+          rel="noreferrer"
+          class="glightbox filterDiv todos peinado"
+          data-glightbox="title: My title; description: this is the slide description"
+          href="images/mujeres/peinado/peinado3(2)_750x1000.jpg"
+        >
+          <img src="images/mujeres/peinado/peinado3(2)_360x480.jpg" alt="" />
+        </a>
+        <a
+          rel="noreferrer"
+          class="glightbox filterDiv todos peinado"
+          data-glightbox="title: My title; description: this is the slide description"
+          href="images/mujeres/peinado/peinado3(3)_750x1000.jpg"
+        >
+          <img src="images/mujeres/peinado/peinado3(3)_360x480.jpg" alt="" />
+        </a>
+        <a
+          rel="noreferrer"
+          class="glightbox filterDiv todos peinado"
+          data-glightbox="title: My title; description: this is the slide description"
+          href="images/mujeres/peinado/peinado11_750x1333.jpg"
+        >
+          <img src="images/mujeres/peinado/peinado11_360x480.jpg" alt="" />
+        </a>
+        <a
+          rel="noreferrer"
+          class="glightbox filterDiv todos peinado"
+          data-glightbox="title: My title; description: this is the slide description"
+          href="images/mujeres/peinado/peinado4(1)_750x750.jpg"
+        >
+          <img src="images/mujeres/peinado/peinado4(1)_360x480.jpg" alt="" />
+        </a>
+        <a
+          rel="noreferrer"
+          class="glightbox filterDiv todos peinado"
+          data-glightbox="title: My title; description: this is the slide description"
+          href="images/mujeres/peinado/peinado4(2)_750x1000.jpg"
+        >
+          <img src="images/mujeres/peinado/peinado4(2)_360x480.jpg" alt="" />
+        </a>
+        <a
+          rel="noreferrer"
+          class="glightbox filterDiv todos peinado"
+          data-glightbox="title: My title; description: this is the slide description"
+          href="images/mujeres/peinado/peinado9(1)_1536x2048.jpg"
+        >
+          <img src="images/mujeres/peinado/peinado9(1)_360x480.jpg" alt="" />
+        </a>
+        <a
+          rel="noreferrer"
+          class="glightbox filterDiv todos peinado"
+          data-glightbox="title: My title; description: this is the slide description"
+          href="images/mujeres/peinado/peinado9(2)_1536x2048.jpg"
+        >
+          <img src="images/mujeres/peinado/peinado9(2)_360x480.jpg" alt="" />
+        </a>
+        <a
+          rel="noreferrer"
+          class="glightbox filterDiv todos peinado"
+          data-glightbox="title: My title; description: this is the slide description"
+          href="images/mujeres/peinado/peinado9(3)_1536x2048.jpg"
+        >
+          <img src="images/mujeres/peinado/peinado9(3)_360x480.jpg" alt="" />
+        </a>
+        <a
+          rel="noreferrer"
+          class="glightbox filterDiv todos peinado"
+          data-glightbox="title: My title; description: this is the slide description"
+          href="images/mujeres/peinado/peinado5(1)_750x1000.jpg"
+        >
+          <img src="images/mujeres/peinado/peinado5(1)_360x480.jpg" alt="" />
+        </a>
+        <a
+          rel="noreferrer"
+          class="glightbox filterDiv todos peinado"
+          data-glightbox="title: My title; description: this is the slide description"
+          href="images/mujeres/peinado/peinado5(2)_750x1000.jpg"
+        >
+          <img src="images/mujeres/peinado/peinado5(2)_360x480.jpg" alt="" />
+        </a>
+        <a
+          rel="noreferrer"
+          class="glightbox filterDiv todos peinado"
+          data-glightbox="title: My title; description: this is the slide description"
+          href="images/mujeres/peinado/peinado5(3)_750x1000.jpg"
+        >
+          <img src="images/mujeres/peinado/peinado5(3)_360x480.jpg" alt="" />
+        </a>
+        <a
+          rel="noreferrer"
+          class="glightbox filterDiv todos peinado"
+          data-glightbox="title: My title; description: this is the slide description"
+          href="images/mujeres/peinado/peinado5(4)_750x1000.jpg"
+        >
+          <img src="images/mujeres/peinado/peinado5(4)_360x480.jpg" alt="" />
+        </a>
+        <a
+          rel="noreferrer"
+          class="glightbox filterDiv todos peinado"
+          data-glightbox="title: My title; description: this is the slide description"
+          href="images/mujeres/peinado/peinado5(5)_750x1000.jpg"
+        >
+          <img src="images/mujeres/peinado/peinado5(5)_360x480.jpg" alt="" />
+        </a>
+        <a
+          rel="noreferrer"
+          class="glightbox filterDiv todos peinado"
+          data-glightbox="title: My title; description: this is the slide description"
+          href="images/mujeres/peinado/peinado6(1)_750x1000.jpg"
+        >
+          <img src="images/mujeres/peinado/peinado6(1)_360x480.jpg" alt="" />
+        </a>
+        <a
+          rel="noreferrer"
+          class="glightbox filterDiv todos peinado"
+          data-glightbox="title: My title; description: this is the slide description"
+          href="images/mujeres/peinado/peinado6(2)_750x1000.jpg"
+        >
+          <img src="images/mujeres/peinado/peinado6(2)_360x480.jpg" alt="" />
+        </a>
+        <a
+          rel="noreferrer"
+          class="glightbox filterDiv todos peinado"
+          data-glightbox="title: My title; description: this is the slide description"
+          href="images/mujeres/peinado/peinado6(3)_750x1000.jpg"
+        >
+          <img src="images/mujeres/peinado/peinado6(3)_360x480.jpg" alt="" />
+        </a>
+        <a
+          rel="noreferrer"
+          class="glightbox filterDiv todos peinado"
+          data-glightbox="title: My title; description: this is the slide description"
+          href="images/mujeres/peinado/peinado6(4)_750x1000.jpg"
+        >
+          <img src="images/mujeres/peinado/peinado6(4)_360x480.jpg" alt="" />
+        </a>
+        <a
+          rel="noreferrer"
+          class="glightbox filterDiv todos peinado"
+          data-glightbox="title: My title; description: this is the slide description"
+          href="images/mujeres/peinado/peinado6(5)_750x1000.jpg"
+        >
+          <img src="images/mujeres/peinado/peinado6(5)_360x480.jpg" alt="" />
+        </a>
+        <a
+          rel="noreferrer"
+          class="glightbox filterDiv todos video peinado"
+          data-glightbox="title: My title; description: this is the slide description"
+          href="videos/mujeres/peinado/peinado1.mp4"
+        >
+          <img src="images/mujeres/peinado/peinado10(1)_360x480.jpg" alt="" />
+        </a>
+        <a
+          rel="noreferrer"
+          class="glightbox filterDiv todos peinado"
+          data-glightbox="title: My title; description: this is the slide description"
+          href="images/mujeres/peinado/peinado10(2)_750x1000.jpg"
+        >
+          <img src="images/mujeres/peinado/peinado10(2)_360x480.jpg" alt="" />
+        </a>
+        <a
+          rel="noreferrer"
+          class="glightbox filterDiv todos peinado"
+          data-glightbox="title: My title; description: this is the slide description"
+          href="images/mujeres/peinado/peinado12_750x1000.jpg"
+        >
+          <img src="images/mujeres/peinado/peinado12_360x480.jpg" alt="" />
+        </a>
+        <a
+          rel="noreferrer"
+          class="glightbox filterDiv todos peinado"
+          data-glightbox="title: My title; description: this is the slide description"
+          href="images/mujeres/peinado/peinado13_750x750.jpg"
+        >
+          <img src="images/mujeres/peinado/peinado13_360x480.jpg" alt="" />
+        </a>
+        <a
+          rel="noreferrer"
+          class="glightbox filterDiv todos peinado"
+          data-glightbox="title: My title; description: this is the slide description"
+          href="images/mujeres/peinado/peinado14_750x1000.jpg"
+        >
+          <img src="images/mujeres/peinado/peinado14_360x480.jpg" alt="" />
+        </a>
+        <a
+          rel="noreferrer"
+          class="glightbox filterDiv todos video peinado"
+          data-glightbox="title: My title; description: this is the slide description"
+          href="videos/mujeres/peinado/peinado2.mp4"
+        >
+          <img src="images/mujeres/peinado/peinado15_360x480.png" alt="" />
+        </a>
+        <a
+          rel="noreferrer"
+          class="glightbox filterDiv todos video peinado"
+          data-glightbox="title: My title; description: this is the slide description"
+          href="videos/mujeres/peinado/peinado3.mp4"
+        >
+          <img src="images/mujeres/peinado/peinado16_360x480.png" alt="" />
+        </a>
+        <a
+          rel="noreferrer"
+          class="glightbox filterDiv todos platinum"
+          data-glightbox="title: My title; description: this is the slide description"
+          href="images/mujeres/platinum/platinum1_750x1000.jpg"
+        >
+          <img src="images/mujeres/platinum/platinum1_360x480.jpg" alt="" />
+        </a>
+        <a
+          rel="noreferrer"
+          class="glightbox filterDiv todos rallitos"
+          data-glightbox="title: My title; description: this is the slide description"
+          href="images/mujeres/rallitos/rallitos1_750x1000.jpg"
+        >
+          <img src="images/mujeres/rallitos/rallitos1_360x480.jpg" alt="" />
+        </a>
+        <a
+          rel="noreferrer"
+          class="glightbox filterDiv todos rallitos"
+          data-glightbox="title: My title; description: this is the slide description"
+          href="images/mujeres/rallitos/rallitos2_750x1000.jpg"
+        >
+          <img src="images/mujeres/rallitos/rallitos2_360x480.jpg" alt="" />
+        </a>
+        <a
+          rel="noreferrer"
+          class="glightbox filterDiv todos rojo ondulado"
+          data-glightbox="title: My title; description: this is the slide description"
+          href="images/mujeres/rojo/ondulado/ondulado3(1)_746x1334.jpg"
+        >
+          <img src="images/mujeres/rojo/ondulado/ondulado3(1)_360x480.jpg" alt="" />
+        </a>
+        <a
+          rel="noreferrer"
+          class="glightbox filterDiv todos rojo ondulado"
+          data-glightbox="title: My title; description: this is the slide description"
+          href="images/mujeres/rojo/ondulado/ondulado3(2)_746x1334.jpg"
+        >
+          <img src="images/mujeres/rojo/ondulado/ondulado3(2)_360x480.jpg" alt="" />
+        </a>
+        <a
+          rel="noreferrer"
+          class="glightbox filterDiv todos rojo ondulado"
+          data-glightbox="title: My title; description: this is the slide description"
+          href="images/mujeres/rojo/ondulado/ondulado4_1536x2048.jpg"
+        >
+          <img src="images/mujeres/rojo/ondulado/ondulado4_360x480.jpg" alt="" />
+        </a>
+        <a
+          rel="noreferrer"
+          class="glightbox filterDiv todos rojo"
+          data-glightbox="title: My title; description: this is the slide description"
+          href="images/mujeres/rojo/rojo3(1)_750x1000.jpg"
+        >
+          <img src="images/mujeres/rojo/rojo3(1)_360x480.jpg" alt="" />
+        </a>
+        <a
+          rel="noreferrer"
+          class="glightbox filterDiv todos rojo"
+          data-glightbox="title: My title; description: this is the slide description"
+          href="images/mujeres/rojo/rojo3(2)_750x1000.jpg"
+        >
+          <img src="images/mujeres/rojo/rojo3(2)_360x480.jpg" alt="" />
+        </a>
+        <a
+          rel="noreferrer"
+          class="glightbox filterDiv todos rojo peinado"
+          data-glightbox="title: My title; description: this is the slide description"
+          href="images/mujeres/rojo/peinado/peinado2_540x960.jpg"
+        >
+          <img src="images/mujeres/rojo/peinado/peinado2_360x480.jpg" alt="" />
+        </a>
+        <a
+          rel="noreferrer"
+          class="glightbox filterDiv todos rubio"
+          data-glightbox="title: My title; description: this is the slide description"
+          href="images/mujeres/rubio/rubio12_750x1000.jpg"
+        >
+          <img src="images/mujeres/rubio/rubio12_360x480.jpg" alt="" />
+        </a>
+        <a
+          rel="noreferrer"
+          class="glightbox filterDiv todos trensas"
+          data-glightbox="title: My title; description: this is the slide description"
+          href="images/mujeres/trensas/trensas1(1)_1536x2048.jpg"
+        >
+          <img src="images/mujeres/trensas/trensas1(1)_360x480.jpg" alt="" />
+        </a>
+        <a
+          rel="noreferrer"
+          class="glightbox filterDiv todos trensas"
+          data-glightbox="title: My title; description: this is the slide description"
+          href="images/mujeres/trensas/trensas1(2)_1536x2048.jpg"
+        >
+          <img src="images/mujeres/trensas/trensas1(2)_360x480.jpg" alt="" />
+        </a>
+        <a
+          rel="noreferrer"
+          class="glightbox filterDiv todos verde"
+          data-glightbox="title: My title; description: this is the slide description"
+          href="images/mujeres/verde/verde1_750x1334.jpg"
+        >
+          <img src="images/mujeres/verde/verde1_360x480.jpg" alt="" />
+        </a>
+        <a
+          rel="noreferrer"
+          class="glightbox filterDiv todos rosa ondulado"
+          data-glightbox="title: My title; description: this is the slide description"
+          href="images/mujeres/rosa/ondulado/ondulado1_1536x2048.jpg"
+        >
+          <img src="images/mujeres/rosa/ondulado/ondulado1_360x480.jpg" alt="" />
+        </a>
+        <a
+          rel="noreferrer"
+          class="glightbox filterDiv todos rosa"
+          data-glightbox="title: My title; description: this is the slide description"
+          href="images/mujeres/rosa/rosa1_750x986.jpg"
+        >
+          <img src="images/mujeres/rosa/rosa1_360x480.jpg" alt="" />
+        </a>
+        <a
+          rel="noreferrer"
+          class="glightbox filterDiv todos rosa"
+          data-glightbox="title: My title; description: this is the slide description"
+          href="images/mujeres/rosa/rosa2_750x1000.jpg"
+        >
+          <img src="images/mujeres/rosa/rosa2_360x480.jpg" alt="" />
+        </a>
+        <a
+          rel="noreferrer"
+          class="glightbox filterDiv todos rosa"
+          data-glightbox="title: My title; description: this is the slide description"
+          href="images/mujeres/rosa/rosa3_750x937.jpg"
+        >
+          <img src="images/mujeres/rosa/rosa3_360x480.jpg" alt="" />
+        </a>
+        <a
+          rel="noreferrer"
+          class="glightbox filterDiv todos rosa rallitos"
+          data-glightbox="title: My title; description: this is the slide description"
+          href="images/mujeres/rosa/rosa4_750x1000.jpg"
+        >
+          <img src="images/mujeres/rosa/rosa4_360x480.jpg" alt="" />
+        </a>
+        <a
+          rel="noreferrer"
+          class="glightbox filterDiv todos rubio mechas"
+          data-glightbox="title: My title; description: this is the slide description"
+          href="images/mujeres/rubio/mechas/mecha(1)_1536x2048.jpg"
+        >
+          <img src="images/mujeres/rubio/mechas/mecha1(1)_360x480.jpg" alt="" />
+        </a>
+        <a
+          rel="noreferrer"
+          class="glightbox filterDiv todos rubio mechas"
+          data-glightbox="title: My title; description: this is the slide description"
+          href="images/mujeres/rubio/mechas/mecha1(2)_1536x2048.jpg"
+        >
+          <img src="images/mujeres/rubio/mechas/mecha1(2)_360x480.jpg" alt="" />
+        </a>
+        <a
+          rel="noreferrer"
+          class="glightbox filterDiv todos rubio ondulado peinado"
+          data-glightbox="title: My title; description: this is the slide description"
+          href="images/mujeres/rubio/ondulado/ondulado4_750x1000.jpg"
+        >
+          <img src="images/mujeres/rubio/ondulado/ondulado4_360x480.jpg" alt="" />
+        </a>
+        <a
+          rel="noreferrer"
+          class="glightbox filterDiv todos rubio ondulado"
+          data-glightbox="title: My title; description: this is the slide description"
+          href="images/mujeres/rubio/ondulado/ondulado6_750x1000.jpg"
+        >
+          <img src="images/mujeres/rubio/ondulado/ondulado6_360x480.jpg" alt="" />
+        </a>
+        <a
+          rel="noreferrer"
+          class="glightbox filterDiv todos rubio"
+          data-glightbox="title: My title; description: this is the slide description"
+          href="images/mujeres/rubio/rubio8_750x1334.jpg"
+        >
+          <img src="images/mujeres/rubio/rubio8_360x480.jpg" alt="" />
+        </a>
+        <a
+          rel="noreferrer"
+          class="glightbox filterDiv todos rubio ondulado"
+          data-glightbox="title: My title; description: this is the slide description"
+          href="images/mujeres/rubio/ondulado/ondulado5(1)_750x1000.jpg"
+        >
+          <img src="images/mujeres/rubio/ondulado/ondulado5(1)_360x480.jpg" alt="" />
+        </a>
+        <a
+          rel="noreferrer"
+          class="glightbox filterDiv todos rubio ondulado"
+          data-glightbox="title: My title; description: this is the slide description"
+          href="images/mujeres/rubio/ondulado/ondulado5(2)_750x1000.jpg"
+        >
+          <img src="images/mujeres/rubio/ondulado/ondulado5(2)_360x480.jpg" alt="" />
+        </a>
+        <a
+          rel="noreferrer"
+          class="glightbox filterDiv todos rubio video ondulado"
+          data-glightbox="title: My title; description: this is the slide description"
+          href="videos/mujeres/rubio/ondulado/ondulado1.mp4"
+        >
+          <img src="images/mujeres/rubio/ondulado/ondulado5(3)_360x480.png" alt="" />
+        </a>
+        <a
+          rel="noreferrer"
+          class="glightbox filterDiv todos rubio peinado"
+          data-glightbox="title: My title; description: this is the slide description"
+          href="images/mujeres/rubio/peinado/peinado1(1)_750x1333.jpg"
+        >
+          <img src="images/mujeres/rubio/peinado/peinado1(1)_360x480.jpg" alt="" />
+        </a>
+        <a
+          rel="noreferrer"
+          class="glightbox filterDiv todos rubio peinado"
+          data-glightbox="title: My title; description: this is the slide description"
+          href="images/mujeres/rubio/peinado/peinado1(2)_750x1333.jpg"
+        >
+          <img src="images/mujeres/rubio/peinado/peinado1(2)_360x480.jpg" alt="" />
+        </a>
+        <a
+          rel="noreferrer"
+          class="glightbox filterDiv todos rubio peinado"
+          data-glightbox="title: My title; description: this is the slide description"
+          href="images/mujeres/rubio/peinado/peinado2_749x832.jpg"
+        >
+          <img src="images/mujeres/rubio/peinado/peinado2_360x480.jpg" alt="" />
+        </a>
+        <a
+          rel="noreferrer"
+          class="glightbox filterDiv todos rubio"
+          data-glightbox="title: My title; description: this is the slide description"
+          href="images/mujeres/rubio/rubio5(1)_1536x2048.jpg"
+        >
+          <img src="images/mujeres/rubio/rubio5(1)_360x480.jpg" alt="" />
+        </a>
+        <a
+          rel="noreferrer"
+          class="glightbox filterDiv todos rubio"
+          data-glightbox="title: My title; description: this is the slide description"
+          href="images/mujeres/rubio/rubio5(2)_1536x2048.jpg"
+        >
+          <img src="images/mujeres/rubio/rubio5(2)_360x480.jpg" alt="" />
+        </a>
+        <a
+          rel="noreferrer"
+          class="glightbox filterDiv todos rubio"
+          data-glightbox="title: My title; description: this is the slide description"
+          href="images/mujeres/rubio/rubio9_750x1334.jpg"
+        >
+          <img src="images/mujeres/rubio/rubio9_360x480.jpg" alt="" />
+        </a>
+        <a
+          rel="noreferrer"
+          class="glightbox filterDiv todos rubio"
+          data-glightbox="title: My title; description: this is the slide description"
+          href="images/mujeres/rubio/rubio10_1536x2048.jpg"
+        >
+          <img src="images/mujeres/rubio/rubio10_360x480.jpg" alt="" />
+        </a>
+        <a
+          rel="noreferrer"
+          class="glightbox filterDiv todos rubio"
+          data-glightbox="title: My title; description: this is the slide description"
+          href="images/mujeres/rubio/rubio11_640x853.jpg"
+        >
+          <img src="images/mujeres/rubio/rubio11_360x480.jpg" alt="" />
+        </a>
+        <a
+          rel="noreferrer"
+          class="glightbox filterDiv todos peinado"
+          data-glightbox="title: My title; description: this is the slide description"
+          href="images/mujeres/peinado/peinado17_3024x4032.jpg"
+        >
+          <img src="images/mujeres/peinado/peinado17_360x480.jpg" alt="" />
+        </a>
+      </div>
+      <script src="scripts/glightbox.min.js"></script>
+      <script type="text/javascript">
+        const lightbox = GLightbox({ loop: true });
+      </script>
+      <script src="scripts/filter.js"></script>
+    </main>
     <footer>
-        <p>
-            Icons made by <a href="https://www.freepik.com" title="Freepik">Freepik</a>  from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a>
-        </p>
+      <p>
+        Icons made by
+        <a href="https://www.freepik.com" title="Freepik">Freepik</a> from
+        <a href="https://www.flaticon.com/" title="Flaticon"
+          >www.flaticon.com</a
+        >
+      </p>
     </footer>
-    
-</body>
+  </body>
 </html>
