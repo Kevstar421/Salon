@@ -31,7 +31,7 @@ nav ul li {
     display: inline;    /* Sets lists to inlines so links go on the same line */
     padding: 0 .124em;    /* Provides spacing on the left & right of the links */
 }
-#icons {    vertical-align: middle;    }
+nav ul li a img {    vertical-align:middle}
 #icons a {    text-decoration: none;    }
 #instagram {
     height: 2rem;
