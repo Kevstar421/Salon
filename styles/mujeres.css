@@ -1,146 +1,152 @@
 * {    box-sizing: border-box;    }
 html {
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 100%;
-    line-height: 1.5em;    /* Sets line-height for reader accessibility */
-    background-color: #181818;    /* Dark mode website */
-    color: #edeef3;    /* white font color */
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 100%;
+  line-height: 1.5em; /* Sets line-height for reader accessibility */
+  background-color: #181818; /* Dark mode website */
+  color: #edeef3; /* white font color */
 }
 /* Positions the logo at the top left of the page */
 #logo {
-    float: left;
-    margin-left: 1.34em;
+  float: left;
+  margin-left: 1.34em;
 }
 img {    height: 2rem;    } /* Allows image to be scaled with font size */
 /* Holds the logo & puts the "Mujeres" style page at the top middle */
 h1 {
-    min-height: 32px;    /* Sets height to be equal with other pages */
-    font-size: 2em;    /* h1 automatically 2em but specified for clarity */
-    text-align: center;    /* Puts text in the middle of the h1 */
+  min-height: 32px; /* Sets height to be equal with other pages */
+  font-size: 2em; /* h1 automatically 2em but specified for clarity */
+  text-align: center; /* Puts text in the middle of the h1 */
 }
 /* Sets font to bold & size to 125% for the appointment link to be more identifiable */
 #cita {
-    font-size: 125%;
-    font-weight: bold;
+  font-size: 125%;
+  font-weight: bold;
 }
 /* Holds the navigations to hairstyles page & appointments */
-nav ul{
-    margin: 0;
-    padding: 1em 0;    /* Padding to top & bottom to look more pleasing */
-    list-style-type: none;    /* Removes bullets normally applied to ul's */
-    text-align: center;    /* Puts text in the middle */
-    border-top: 2px solid #edeef3; /* Adds a solid white border at the top */
-    border-bottom: 2px solid #edeef3; /* Adds a solid white border at the bottom */
-    box-shadow: 0px 1px 20px 1px; /* Adds a shadow to the border */
+nav ul {
+  margin: 0;
+  padding: 1em 0; /* Padding to top & bottom to look more pleasing */
+  list-style-type: none; /* Removes bullets normally applied to ul's */
+  text-align: center; /* Puts text in the middle */
+  border-top: 2px solid #edeef3; /* Adds a solid white border at the top */
+  border-bottom: 2px solid #edeef3; /* Adds a solid white border at the bottom */
+  box-shadow: 0px 1px 20px 1px; /* Adds a shadow to the border */
 }
 nav ul li {
-    display: inline;    /* Sets lists to inlines so links go on the same line */
-    padding: 0 1.5em;    /* Provides spacing on the left & right of the links */
+  display: inline; /* Sets lists to inlines so links go on the same line */
+  padding: 0 1.5em; /* Provides spacing on the left & right of the links */
 }
 nav img {    vertical-align: middle;    }
 #myBtn {    cursor: pointer;    }
 /* The Modal (background) */
 .modal {
-    display: none; /* Hidden by default */   
-    position: fixed; /* Stay in place */
-    z-index: 1; /* Sit on top */
-    padding-top: 100px; /* Location of the box */
-    left: 0;
-    top: 0;
-    width: 100%; /* Full width */
-    height: 100%; /* Full height */
-    overflow: auto; /* Enable scroll if needed */
-    background-color: rgb(0,0,0); /* Fallback color */
-    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0, 0, 0); /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
 }
 /* Modal Content */
 .modalBtnContent {
-    position: relative;
-    background-color: #181818;
-    margin: auto;
-    padding: 0;
-    border: 1px solid #888;
-    width: 80%;
-    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
-    -webkit-animation-name: animatetop;
-    -webkit-animation-duration: 0.4s;
-    animation-name: animatetop;
-    animation-duration: 0.4s
+  position: relative;
+  background-color: #181818;
+  margin: auto;
+  padding: 0;
+  border: 1px solid #888;
+  width: 80%;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  -webkit-animation-name: animatetop;
+  -webkit-animation-duration: 0.4s;
+  animation-name: animatetop;
+  animation-duration: 0.4s;
 }
 /* Add Animation */
 @-webkit-keyframes animatetop {
-    from {top:-300px; opacity:0} 
-    to {top:0; opacity:1}
+  from {
+    top: -300px;
+    opacity: 0;
+  }
+  to {
+    top: 0;
+    opacity: 1;
+  }
 }
 @keyframes animatetop {
-    from {top:-300px; opacity:0}
-    to {top:0; opacity:1}
+  from {
+    top: -300px;
+    opacity: 0;
+  }
+  to {
+    top: 0;
+    opacity: 1;
+  }
 }
 /* The Close Button */
 .closeBtn {
-    text-decoration: none;
-    font-size: 28px;
-    font-weight: bold;
-    position: absolute;
-    right: .1em;
-    top: .1em;
+  text-decoration: none;
+  font-size: 28px;
+  font-weight: bold;
+  position: absolute;
+  right: 0.1em;
+  top: 0.1em;
 }
 .closeBtn:link, .closeBtn:visited {    color: white;    }
 .closeBtn:hover, .closeBtn:focus {
-    color: #000;
-    text-decoration: none;
-    cursor: pointer;
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
 }
 .modal-header {
-    padding: 2px 16px;
-    background-color: slategray;
-    color: white;
-    font-size: 120%;
-}
-.filterDiv {
-  display: none; /* Hidden by default */
+  padding: 2px 16px;
+  background-color: slategray;
+  color: white;
+  font-size: 120%;
 }
 /* The "show" class is added to the filtered elements */
-.show {
-  display: inline;
-}
+.show {    display: inline;    }
 /* Style the buttons */
 .btn {
-    border: none;
-    outline: none;
-    padding: 12px 16px;
-    margin: 2px 0;
-    background-color: #f1f1f1;
-    cursor: pointer;
-    color: black;
+  border: none;
+  outline: none;
+  padding: 12px 16px;
+  margin: 2px 0;
+  background-color: #f1f1f1;
+  cursor: pointer;
+  color: black;
 }
 /* Add a light grey background on mouse-over */
 .btn:hover {    background-color: #ddd;    }
 .btn:focus {    background-color: #ddd;    }
 /* Add a dark background to the active button */
 .btn.active {
-    background-color: #666;
-    color: white;
+  background-color: #666;
+  color: white;
 }
-
 main div {    text-align: center;    }
-main div a {    text-decoration: none    }
+main div a {    text-decoration: none;    }
 /* Scalable Images */
 main div a img {
-    width: 100%;
-    max-width: 360px;
-    height: auto;
+  width: 100%;
+  max-width: 360px;
+  height: auto;
 }
 /* Link color of "aqua" when not visited */
 a:link {    color: aqua;    }
 /* Link color of "Electric Purple" when visited */
-a:visited {    color: #BF00FF;    }
+a:visited {    color: #bf00ff;    }
 /* Sets footer to the bottom middle of the page */
-footer p{
-    font-size: smaller;
-    border-top: 2px solid #edeef3;
-    width: 100%;
-    margin: 0;
-    padding: 0;
-    text-align: center;
+footer p {
+  font-size: smaller;
+  border-top: 2px solid #edeef3;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  text-align: center;
 }
