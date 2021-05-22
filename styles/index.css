@@ -33,7 +33,7 @@ nav ul li {
     display: inline;    /* Sets lists to inlines so links go on the same line */
     padding: 0 .124em;    /* Provides spacing on the left & right of the links */
 }
-nav ul li a img {    vertical-align:middle;    }
+nav ul li span a img, picture {    vertical-align:top;    }
 #icons a {    text-decoration: none;    }
 #instagram {
     width: 100%;
@@ -83,6 +83,7 @@ footer p{
   main p {font-size: 1.25em;} /* 20px */
 }
 @media only screen and (max-height: 414px) {
+    main p {display: none;}
     footer p {
     border-top: 1px solid grey;
     width: 100%;
