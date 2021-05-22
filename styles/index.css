@@ -82,7 +82,7 @@ footer p{
   #icons {vertical-align: text-bottom;}
   main p {font-size: 1.25em;} /* 20px */
 }
-@media only screen and (min-height: 375px) and (max-height: 414px) {
+@media only screen and (max-width: 896px) {
     footer p {
     border-top: 1px solid grey;
     width: 100%;
