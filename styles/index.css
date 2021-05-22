@@ -82,6 +82,15 @@ footer p{
   #icons {vertical-align: text-bottom;}
   main p {font-size: 1.25em;} /* 20px */
 }
+@media only screen and (max-width: 896px) {
+    footer p {
+    border-top: 1px solid grey;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    }
+}
 /* Mobile portrait layout */
 @media only screen and (max-width: 414px) {
     header h1 {font-size: 3em;} /* 48px */
