@@ -105,6 +105,6 @@ footer p{
     }
     #mujeres {font-size: 1.3em;} /* 20.8px */
     #cita {font-size: 1.7em;} /* 27.2px */
-    nav ul li span .maps {display: none;}
+    nav ul li span #maps {display: none;}
     main p {font-size: 1.3em;} /* 20.8px */
 }
