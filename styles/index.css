@@ -14,8 +14,10 @@ h1 {
 }
 /* Lines up the logo next to the salon name & scales the image based on font size */
 h1 img {
-    vertical-align: text-top;    /* Aligns img to the middle of the text... kind of */
-    height: 1em;    /* Allows the img to be scaled based on the h1 font-size */
+    vertical-align: middle;    /* Aligns img to the middle of the text... kind of */
+    width: 100%;
+    max-width: 32px;
+    height: auto;
 }
 /* Holds the navigations to hairstyles page & appointments */
 nav ul{
@@ -56,4 +58,21 @@ footer p{
     text-align: center;
     position: absolute;
     bottom: 0;
+}
+/* Tablet portrait layout */
+@media only screen and (max-width: 1024px) {
+  header h1 {   font-size: 4em;   }
+  h1 img {
+      background-image: url(../images/scissors64px.png);
+      width: 100%;
+      max-width: 64px;
+      height: auto;
+      vertical-align: text-top;
+  }
+  #mujeres {font-size: 1.25em;}
+  #cita {font-size: 200%;}
+  #icons {vertical-align: text-bottom;}
+  main p {
+      font-size: 1.25em;
+  }
 }
