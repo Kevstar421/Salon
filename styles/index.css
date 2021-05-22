@@ -33,7 +33,7 @@ nav ul li {
     display: inline;    /* Sets lists to inlines so links go on the same line */
     padding: 0 .124em;    /* Provides spacing on the left & right of the links */
 }
-nav ul li span a img, picture {    vertical-align:top;    }
+nav ul li span a img, picture {    vertical-align:middle;    }
 #icons a {    text-decoration: none;    }
 #instagram {
     width: 100%;
