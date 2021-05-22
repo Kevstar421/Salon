@@ -72,9 +72,7 @@ footer p{
   #mujeres {font-size: 1.25em;} /* 20px */
   #cita {font-size: 2em;} /* 32px */
   #icons {vertical-align: text-bottom;}
-  main p {
-      font-size: 1.25em; /* 20px */
-  }
+  main p {font-size: 1.25em;} /* 20px */
 }
 /* Mobile portrait layout */
 @media only screen and (max-width: 414px) {
