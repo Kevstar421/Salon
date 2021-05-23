@@ -23,7 +23,7 @@ window.onclick = function(event) {
     modal.style.display = "none";
   }
 }
-window.touch = function(event) {
+window.touchstart = function(event) {
   if (event.target == modal) {
     modal.style.display = "none";
   }
