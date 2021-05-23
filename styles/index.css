@@ -45,6 +45,7 @@ nav ul li span a img {    vertical-align:middle;    }
     max-width: 32px;
     height: auto;
 }
+#maps {display: none;}
 /* Sets font to bold & size to 1.25em for the appointment link to be more identifiable */
 #cita {
     font-size: 1.25em;
@@ -69,6 +70,7 @@ footer p{
 }
 /* Tablet portrait layout */
 @media only screen and (max-width: 1024px) {
+    
   header h1 {   font-size: 4em;   } /* 64px */
   h1 img {
       background-image: url(../images/scissors64px.png);
@@ -83,6 +85,12 @@ footer p{
   main p {font-size: 1.25em;} /* 20px */
 }
 @media only screen and (max-width: 896px) and (max-height: 414px) {
+    #maps {
+        display: inline;
+        width: 100%;
+        max-width: 32px;
+        height: auto;
+    }
     main p {display: none;}
     footer p {
     border-top: 1px solid grey;
