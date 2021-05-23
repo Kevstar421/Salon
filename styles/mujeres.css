@@ -135,7 +135,7 @@ main div a {    text-decoration: none;    }
 main div a img {
   width: 100%;
   max-width: 360px;
-  height: auto;
+  height: 480px;
 }
 /* Link color of "aqua" when not visited */
 a:link {    color: aqua;    }
