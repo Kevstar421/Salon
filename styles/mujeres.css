@@ -11,9 +11,12 @@ html {
   float: left;
   margin-left: 1.34em;
 }
-img {    height: 2rem;    } /* Allows image to be scaled with font size */
+header a img {
+  height: 2rem;  /* Allows image to be scaled with font size */
+  position: absolute;
+}
 /* Holds the logo & puts the "Mujeres" style page at the top middle */
-h1 {
+header h1 {
   min-height: 32px; /* Sets height to be equal with other pages */
   font-size: 2em; /* h1 automatically 2em but specified for clarity */
   text-align: center; /* Puts text in the middle of the h1 */
