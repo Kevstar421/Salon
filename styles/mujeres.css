@@ -40,8 +40,7 @@ nav ul li {
   display: inline; /* Sets lists to inlines so links go on the same line */
   padding: 0 1.5em; /* Provides spacing on the left & right of the links */
 }
-nav img {    vertical-align: middle;    }
-#myBtn {    cursor: pointer;    }
+nav #myBtn img {    vertical-align: middle;    }
 /* The Modal (background) */
 .modal {
   display: none; /* Hidden by default */
