@@ -31,7 +31,7 @@ header h1 {
   font-size: 125%;
   font-weight: bold;
 }
-.fas {color: #edeef3;}
+.fas { color: #edeef3; }
 /* Holds the navigations to hairstyles page & appointments */
 nav ul {
   margin: 0;
@@ -162,4 +162,7 @@ footer p {
   margin: 0;
   padding: 0;
   text-align: center;
+}
+@media only screen and (max-width: 1024px) {
+  .closeBtn { font-size: 45px; }
 }
