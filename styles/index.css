@@ -72,7 +72,6 @@ footer p{
 @media only screen and (max-width: 1024px) {
   header h1 {   font-size: 4em;   } /* 64px */
   h1 img {
-      background-image: url(../images/scissors64px.png);
       width: 100%;
       max-width: 64px;
       height: auto;
