@@ -114,14 +114,6 @@ a:visited {    color: #BF00FF;    }
         height: auto;
     }
     main p {display: none;}
-    footer p {
-    border-top: 1px solid grey;
-    width: 100%;
-    margin: 0;
-    padding: 0;
-    text-align: center;
-    position: relative;
-    }
 }
 /* Mobile portrait layout */
 @media only screen and (max-width: 414px) {
@@ -160,6 +152,7 @@ a:visited {    color: #BF00FF;    }
     #primaryFooter #credit { height: 7.6%;}
     #primaryFooter #copyright { height: 7.6%; }
 }
+/* iPhone 6/7/8 IOS 11 landscape mode */
 @media only screen and (max-width: 667px) and (max-height: 375px) {
     #primaryFooter #credit { height: 13.5%;}
     #primaryFooter #copyright { height: 13.5%; }
