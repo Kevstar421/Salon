@@ -191,8 +191,8 @@ footer #copyright {
 }
 /* iPhone X/XS IOS 12 */
 @media only screen and (max-width: 375px) and (max-height: 812px) {
-  footer #credit { height: 4.78em; }
-  footer #copyright { height: 4.78em; }
+  footer #credit { height: 4.789em; }
+  footer #copyright { height: 4.789em; }
 }
 /* iPhone 6/7/8 IOS 11 portrait mode */
 @media only screen and (max-width: 375px) and (max-height: 667px) {
