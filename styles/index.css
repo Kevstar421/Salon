@@ -45,7 +45,9 @@ nav ul li span a img {    vertical-align:bottom;    }
     max-width: 24px;
     height: auto;
 }
-#maps {display: none;}
+/* Hidden until displayed in media queries */
+#mapsLink { display: none; }
+#mapsImg { display: none; }
 /* Sets font to bold & size to 1.25em for the appointment link to be more identifiable */
 #cita {
     font-size: 1.25em;
@@ -103,7 +105,8 @@ footer #copyright {
 }
 /* Mobile Landscape mode */
 @media only screen and (max-width: 896px) and (max-height: 414px) {
-    #maps {
+    #mapsLink { display: inline; }
+    #mapsImg {
         display: inline;
         width: 100%;
         max-width: 32px;
