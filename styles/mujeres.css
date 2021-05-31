@@ -46,12 +46,6 @@ nav ul li {
   display: inline; /* Sets lists to inlines so links go on the same line */
   padding: 0 1.5em; /* Provides spacing on the left & right of the links */
 }
-nav #myBtn img {
-  vertical-align: middle;
-  width: 100%;
-  max-width: 32px;
-  height: auto;
-}
 /* The Modal (background) */
 .modal {
   display: none; /* Hidden by default */
