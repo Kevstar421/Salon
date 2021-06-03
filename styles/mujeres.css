@@ -145,7 +145,7 @@ main div a img {
   height: 480px;
 }
 /* Scalable Videos */
-main div a video {
+main div video {
   width: auto;
   height: 100%;
   max-height: 480px;
