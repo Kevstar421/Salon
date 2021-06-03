@@ -182,7 +182,7 @@ footer #copyright2 {
   .closeBtn { font-size: 45px; }
 }
 @media only screen and (max-width: 414px) {
-  a#video1 {
+  a.video {
     display: none;
   }
   main div video {
