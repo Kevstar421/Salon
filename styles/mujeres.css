@@ -186,6 +186,7 @@ footer #copyright2 {
     display: none;
   }
   main div video {
+    display: inline;
     width: 100%;
     max-width: 360px;
     height: auto;
