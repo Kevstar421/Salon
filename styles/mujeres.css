@@ -182,11 +182,7 @@ footer #copyright2 {
   .closeBtn { font-size: 45px; }
 }
 @media only screen and (max-width: 414px) {
-  a.video {
-    display: none;
-  }
   main div video {
-    display: inline;
     width: 100%;
     max-width: 360px;
     height: auto;
