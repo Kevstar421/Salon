@@ -187,7 +187,7 @@ footer #copyright2 {
     max-width: 360px;
     height: auto;
   }
-  a.video {
+  .nomobile {
     display: none;
   }
   footer #copyright { display: none; }
