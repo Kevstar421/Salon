@@ -150,6 +150,7 @@ main div video {
   height: 100%;
   max-height: 480px;
 }
+.yesmobile { display: none; }
 /* Link color of "aqua" when not visited */
 a:link {    color: aqua;    }
 /* Link color of "Electric Purple" when visited */
@@ -182,16 +183,16 @@ footer #copyright2 {
   .closeBtn { font-size: 45px; }
 }
 @media only screen and (max-width: 414px) {
-  a.nomobile {
-    display: none;
-  }
-  video {
-    display: inline;
-  }
   main div video {
     width: 100%;
     max-width: 360px;
     height: auto;
+  }
+  .nomobile {
+    display: none;
+  }
+  .yesmobile {
+    display: inline;
   }
   footer #copyright { display: none; }
   footer #copyright2 { display: block; }
