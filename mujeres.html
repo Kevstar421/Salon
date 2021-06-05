@@ -528,14 +528,28 @@
         >
           <img src="images/mujeres/peinado/peinado6(5)_750x1000.jpg" alt="" />
         </a>
+        <!-- Glightbox shown on tablets & desktop -->
+        <a
+        class="glightbox filterDiv todos video peinado ondulado nomobile"
+        data-glightbox="title: Peinado; description:"
+        href="videos/mujeres/peinado/peinado10.mp4">
           <video
             controls
             muted
             preload="metadata"
-            class="filterDiv todos video peinado ondulado"
           >
             <source id="video" src="videos/mujeres/peinado/peinado10.mp4#t=0.0000001" type="video/mp4">
           </video>
+        </a>
+        <!-- Glightbox hidden on mobile although is still shown if you slide to the video. Weird.-->
+        <video
+          controls
+          muted
+          preload="metadata"
+          class="filterDiv todos video peinado ondulado yesmobile"
+        >
+          <source id="video" src="videos/mujeres/peinado/peinado10.mp4#t=0.0000001" type="video/mp4">
+        </video>
         <a
           class="glightbox filterDiv todos peinado ondulado"
           data-glightbox="title: Peinado ondulado; description:"
