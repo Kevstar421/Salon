@@ -231,14 +231,26 @@
         >
           <img src="images/mujeres/rojo/rojo2_750x1333.jpg" alt="" />
         </a>
+        <a
+        class="glightbox filterDiv todos rojo trenzas video nomobile"
+        data-glightbox="title: Trenzas Rojo; description:"
+        href="videos/mujeres/rojo/trenzas/trenzas1.mp4">
           <video
             controls
             muted
             preload="metadata"
-            class="filterDiv todos rojo trenzas video"
           >
             <source id="video" src="videos/mujeres/rojo/trenzas/trenzas1.mp4#t=0.0000001" type="video/mp4">
           </video>
+        </a>
+        <video
+          controls
+          muted
+          preload="metadata"
+          class="filterDiv todos rojo trenzas video yesmobile"
+        >
+          <source id="video" src="videos/mujeres/rojo/trenzas/trenzas1.mp4#t=0.0000001" type="video/mp4">
+        </video>
           <video
             controls
             muted
@@ -777,6 +789,7 @@
         >
           <img src="images/mujeres/rubio/rubio11_640x853.jpg" alt="" />
         </a>
+        <!-- Glightbox shown on tablets & desktop -->
         <a
         class="glightbox filterDiv todos video peinado ondulado nomobile"
         data-glightbox="title: Peinado; description:"
@@ -789,14 +802,15 @@
             <source src="videos/mujeres/peinado/peinado17.mp4#t=0.0000001" type="video/mp4">
           </video>
         </a>
-          <video
-            controls
-            muted
-            preload="metadata"
-            class="filterDiv todos video peinado ondulado yesmobile"
-          >
-            <source src="videos/mujeres/peinado/peinado17.mp4#t=0.0000001" type="video/mp4">
-          </video>
+        <!-- Glightbox hidden on mobile although is still shown if you slide to the video. Weird.-->
+        <video
+          controls
+          muted
+          preload="metadata"
+          class="filterDiv todos video peinado ondulado yesmobile"
+        >
+          <source src="videos/mujeres/peinado/peinado17.mp4#t=0.0000001" type="video/mp4">
+        </video>
         <a
           class="glightbox filterDiv todos rojo"
           data-glightbox="title: Rojo; description:"
