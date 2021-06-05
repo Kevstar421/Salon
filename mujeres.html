@@ -797,11 +797,25 @@
         >
           <img src="images/mujeres/rubio/ondulado/ondulado5(2)_750x1000.jpg" alt="" />
         </a>
+        <!-- Glightbox shown on tablets & desktop -->
+        <a
+        class="glightbox filterDiv todos rubio video ondulado nomobile"
+        data-glightbox="title: Rubio; description:"
+        href="videos/mujeres/rubio/ondulado/ondulado5.mp4">
           <video
             controls
             muted
             preload="metadata"
-            class="filterDiv todos rubio video ondulado"
+          >
+            <source id="video" src="videos/mujeres/rubio/ondulado/ondulado5.mp4#t=0.0000001" type="video/mp4">
+          </video>
+        </a>
+        <!-- Glightbox hidden on mobile although is still shown if you slide to the video. Weird.-->
+        <video
+            controls
+            muted
+            preload="metadata"
+            class="filterDiv todos rubio video ondulado yesmobile"
           >
             <source id="video" src="videos/mujeres/rubio/ondulado/ondulado5.mp4#t=0.0000001" type="video/mp4">
           </video>
