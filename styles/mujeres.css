@@ -33,6 +33,7 @@ header h1 {
 }
 #myBtn {
   background-color: #181818;
+  border: 2px solid #edeef3;
   border-radius: 5px;
   cursor: pointer;
 }
