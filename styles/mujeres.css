@@ -32,6 +32,7 @@ header h1 {
   font-weight: bold;
 }
 #myBtn {
+  padding: 1px 4px;
   background-color: #181818;
   border: 2px solid #edeef3;
   border-radius: 5px;
@@ -40,7 +41,7 @@ header h1 {
 #myBtn:hover { background-color: gray; }
 #myBtn:focus { background-color: gray;}
 #myBtn:active { background-color: black; }
-.fas { color: #edeef3; margin: 0;}
+.fas { color: #edeef3; }
 /* Holds the navigations to hairstyles page & appointments */
 nav ul {
   margin: 0;
