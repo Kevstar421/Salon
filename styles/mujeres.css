@@ -197,7 +197,7 @@ footer #copyright2 {
 @media only screen and (max-width: 414px) {
   #myBtn {
     border: 2px solid #edeef3;
-    vertical-align: bottom;
+    vertical-align: top;
   }
   .nomobile {
     display: none;
