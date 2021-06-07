@@ -36,7 +36,6 @@ header h1 {
   border: 2px solid #edeef3;
   border-radius: 5px;
   cursor: pointer;
-  padding: 0;
 }
 #myBtn:hover { background-color: gray; }
 #myBtn:focus { background-color: gray;}
@@ -196,6 +195,7 @@ footer #copyright2 {
   .closeBtn { font-size: 45px; }
 }
 @media only screen and (max-width: 414px) {
+  #myBtn { padding: .2em;}
   .nomobile {
     display: none;
   }
