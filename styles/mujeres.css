@@ -36,6 +36,7 @@ header h1 {
   border: 2px solid #edeef3;
   border-radius: 5px;
   cursor: pointer;
+  padding: 0;
 }
 #myBtn:hover { background-color: gray; }
 #myBtn:focus { background-color: gray;}
