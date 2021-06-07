@@ -31,6 +31,14 @@ header h1 {
   font-size: 125%;
   font-weight: bold;
 }
+#myBtn {
+  background-color: #181818;
+  border-radius: 5px;
+  cursor: pointer;
+}
+#myBtn:hover { background-color: gray; }
+#myBtn:focus { background-color: gray;}
+#myBtn:active { background-color: black; }
 .fas { color: #edeef3; }
 /* Holds the navigations to hairstyles page & appointments */
 nav ul {
@@ -66,7 +74,7 @@ nav ul li {
   background-color: #181818;
   margin: auto;
   padding: 0;
-  border: 1px solid #888;
+  border: 1px solid #edeef3;
   width: 80%;
   border-radius: 20px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
