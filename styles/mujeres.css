@@ -40,7 +40,7 @@ header h1 {
 #myBtn:hover { background-color: gray; }
 #myBtn:focus { background-color: gray;}
 #myBtn:active { background-color: black; }
-.fas { color: #edeef3; }
+.fas { color: #edeef3; margin: 0;}
 /* Holds the navigations to hairstyles page & appointments */
 nav ul {
   margin: 0;
@@ -195,7 +195,6 @@ footer #copyright2 {
   .closeBtn { font-size: 45px; }
 }
 @media only screen and (max-width: 414px) {
-  #myBtn { padding: .2em .2em .2em .2em;}
   .nomobile {
     display: none;
   }
