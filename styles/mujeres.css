@@ -11,14 +11,10 @@ html {
   float: left;
   margin-left: 1.34em;
 }
-#logo img {
-  width: 100%;
-  max-width: 32px;
-  height: auto;
-}
 header a img {
   height: 2rem;  /* Allows image to be scaled with font size */
   position: absolute;
+  top: 1.1em;
 }
 /* Holds the logo & puts the "Mujeres" style page at the top middle */
 header h1 {
