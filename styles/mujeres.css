@@ -195,7 +195,10 @@ footer #copyright2 {
   .closeBtn { font-size: 45px; }
 }
 @media only screen and (max-width: 414px) {
-  #myBtn { border: 2px solid #edeef3; }
+  #myBtn {
+    border: 2px solid #edeef3;
+    vertical-align: top;
+  }
   .nomobile {
     display: none;
   }
