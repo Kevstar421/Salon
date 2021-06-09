@@ -8,14 +8,12 @@ html {
 }
 /* Positions the logo at the top left of the page */
 #logo {
-  float: left;
-  margin-left: 2.6em;
-}
-header a img {
-  height: 2rem;  /* Allows image to be scaled with font size */
   position: absolute;
+  left: 2.6em;
   top: 1.1em;
 }
+/* Allows image to be scaled with font size */
+header a img { height: 2rem; }
 /* Holds the logo & puts the "Mujeres" style page at the top middle */
 header h1 {
   min-height: 32px; /* Sets height to be equal with other pages */
@@ -191,7 +189,7 @@ footer #copyright2 {
   .closeBtn { font-size: 45px; }
 }
 @media only screen and (max-width: 414px) {
-  #logo { margin-left: .9em; }
+  #logo { left: .9em; }
   #myBtn {
     border: 2px solid #edeef3;
     vertical-align: top;
