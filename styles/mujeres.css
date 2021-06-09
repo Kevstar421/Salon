@@ -9,7 +9,7 @@ html {
 /* Positions the logo at the top left of the page */
 #logo {
   float: left;
-  margin-left: 1.34em;
+  margin-left: 2.6em;
 }
 header a img {
   height: 2rem;  /* Allows image to be scaled with font size */
@@ -191,6 +191,7 @@ footer #copyright2 {
   .closeBtn { font-size: 45px; }
 }
 @media only screen and (max-width: 414px) {
+  #logo { margin-left: .9em; }
   #myBtn {
     border: 2px solid #edeef3;
     vertical-align: top;
