@@ -33,7 +33,13 @@ nav ul li {
     display: inline;    /* Sets lists to inlines so links go on the same line */
     padding: 0 .124em;    /* Provides spacing on the left & right of the links */
 }
-nav ul li span a img {    vertical-align:bottom;    }
+#mujeres { font-size: 1.15em; }
+/* Sets font to bold & size to 1.4em for the appointment link to be more identifiable */
+#cita {
+    font-size: 1.4em;
+    font-weight: bold;
+}
+nav ul li span a img {    vertical-align: top;    }
 #icons a {    text-decoration: none;    }
 #instagram {
     width: 100%;
@@ -48,13 +54,9 @@ nav ul li span a img {    vertical-align:bottom;    }
 /* Hidden until displayed in media queries */
 #mapsLink { display: none; }
 #mapsImg { display: none; }
-/* Sets font to bold & size to 1.25em for the appointment link to be more identifiable */
-#cita {
-    font-size: 1.25em;
-    font-weight: bold;
-}
 main p {
     text-align: center;
+    font-size: 1.15em;
 }
 /* Link color of "aqua" when not visited */
 a:link {    color: aqua;    }
