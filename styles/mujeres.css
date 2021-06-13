@@ -186,6 +186,7 @@ a:visited {    color: #bf00ff;    }
   border-radius: 25px;
 }
 .pagination ul li.next a:hover {
+  padding: .5em 1em;
   background: #edeef3;
   border-radius: 5px 25px 25px 5px;
 }
