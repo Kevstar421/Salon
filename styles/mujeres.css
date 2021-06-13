@@ -99,6 +99,17 @@ nav ul li {
     opacity: 1;
   }
 }
+.active,
+#myBtnContainer a {
+  text-decoration: none;
+  display: inline-block;
+  margin: .1em 0 .1em 0;
+  padding: .5em;
+  color: #edeef3;
+  background: #36454F;
+  border-radius: 10px;
+}
+#myBtnContainer a:hover { background: #414A4C; }
 /* The Close Button */
 .closeBtn {
   text-decoration: none;
@@ -124,24 +135,6 @@ nav ul li {
 /* The "show" class is added to the filtered elements */
 .show {    display: inline;    }
 /* Style the buttons */
-.btn {
-  border: none;
-  border-radius: 10px;
-  outline: none;
-  padding: 12px 16px;
-  margin: 2px 0;
-  background-color: #edeef3;
-  cursor: pointer;
-  color: black;
-}
-/* Add a light grey background on mouse-over */
-.btn:hover {    background-color: #ddd;    }
-.btn:focus {    background-color: #ddd;    }
-/* Add a dark background to the active button */
-.btn.active {
-  background-color: #666;
-  color: white;
-}
 main div {    text-align: center;    }
 main div a {    text-decoration: none;    }
 /* Scalable Images */
@@ -150,17 +143,51 @@ main div a img {
   max-width: 360px;
   height: 480px;
 }
+
 /* Scalable Videos */
 main div video {
   width: auto;
   height: 100%;
   max-height: 480px;
 }
+
 .yesmobile { display: none; }
 /* Link color of "aqua" when not visited */
 a:link {    color: aqua;    }
 /* Link color of "Electric Purple" when visited */
 a:visited {    color: #bf00ff;    }
+/* Pagination to navigate through the images */
+.pagination ul {
+  margin: 1em 0;
+  list-style-type: none; /* Removes bullets normally applied to ul's */
+  text-align: center; /* Puts text in the middle */
+}
+.pagination ul li {
+  display: inline; /* Sets lists to inlines so links go on the same line */
+  font-weight: bold;
+}
+.pagination ul li a {
+  padding: .5em 1em;
+}
+.pagination ul li.prev a:hover {
+  background: #edeef3;
+  border-radius: 25px 5px 5px 25px;
+}
+.pagination ul li.activeNav {
+  padding: .5em 1em;
+  background: #edeef3;
+  color: #181818;
+  border-radius: 25px;
+}
+.pagination ul li.numb a:hover {
+  padding: .5em 1em;
+  background: #edeef3;
+  border-radius: 25px;
+}
+.pagination ul li.next a:hover {
+  background: #edeef3;
+  border-radius: 5px 25px 25px 5px;
+}
 /* Sets footer to the bottom middle of the page */
 footer #credit {
   border-top: 1px solid grey;
