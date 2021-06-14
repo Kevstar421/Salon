@@ -158,38 +158,40 @@ a:link {    color: aqua;    }
 a:visited {    color: #bf00ff;    }
 /* Pagination to navigate through the images */
 .pagination ul {
+  list-style-type: none;
   margin: 1em 0;
-  list-style-type: none; /* Removes bullets normally applied to ul's */
   padding: 0;
 }
 .pagination ul li {
-  display: inline; /* Sets lists to inlines so links go on the same line */
+  display: inline;
+  padding: 0;
   font-weight: bold;
-  
-}
-.pagination ul li a {
-  padding: 1em;
-}
-.pagination ul li.prev a:hover {
-  background: #edeef3;
-  border-radius: 25px 5px 5px 25px;
 }
 .pagination ul li.activeNav {
+  background: #232B2B  ;
   padding: .5em 1em;
-  background: #edeef3;
-  color: #181818;
+  color: #edeef3;
   border-radius: 25px;
 }
-.pagination ul li.numb a:hover {
-  padding: .5em 1em;
-  background: #edeef3;
+.pagination ul li.numb a {
   border-radius: 25px;
-}
-.pagination ul li.next a:hover {
   padding: .5em 1em;
-  background: #edeef3;
+}
+.pagination ul li.prev a {
+  padding: .5em;
+  border-radius: 25px 5px 5px 25px;
+}
+.pagination ul li.next a {
+  padding: .5em;
   border-radius: 5px 25px 25px 5px;
 }
+.pagination ul li.prev a:hover,
+.pagination ul li.next a:hover,
+.pagination ul li.numb a:hover {
+  transition: background .2s;
+  background: #232B2B;
+}
+
 /* Sets footer to the bottom middle of the page */
 footer #credit {
   border-top: 1px solid grey;
@@ -223,7 +225,6 @@ footer #copyright2 {
     border: 2px solid #edeef3;
     vertical-align: top;
   }
-  .pagination ul li a { padding: 0 .8em; }
   .nomobile {
     display: none;
   }
