@@ -231,11 +231,7 @@ footer #copyright2 {
   .yesmobile {
     display: inline;
   }
-  main div video {
-    width: 100%;
-    max-width: 360px;
-    height: auto;
-  }
+
   footer #copyright { display: none; }
   footer #copyright2 { display: block; }
 }
