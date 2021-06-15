@@ -169,20 +169,20 @@ a:visited {    color: #bf00ff;    }
 }
 .pagination ul li.activeNav {
   background: #232B2B  ;
-  padding: .5em 1em;
+  padding: .4em 0.9em;
   color: #edeef3;
   border-radius: 25px;
 }
 .pagination ul li.numb a {
   border-radius: 25px;
-  padding: .5em 1em;
+  padding: .4em 0.9em;
 }
 .pagination ul li.prev a {
-  padding: .5em;
+  padding: 0.4em;
   border-radius: 25px 5px 5px 25px;
 }
 .pagination ul li.next a {
-  padding: .5em;
+  padding: 0.4em;
   border-radius: 5px 25px 25px 5px;
 }
 .pagination ul li.prev a:hover,
