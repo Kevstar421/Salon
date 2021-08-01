@@ -230,18 +230,12 @@ footer #copyright2 {
     border: 2px solid #edeef3;
     vertical-align: top;
   }
-  .mobileWidth {
-    width: 100%;
-    max-width: 414px;
-    height: auto;
-  }
   .nomobile {
     display: none;
   }
   .yesmobile {
     display: inline;
   }
-
   footer #copyright { display: none; }
   footer #copyright2 { display: block; }
 }
