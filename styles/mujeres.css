@@ -139,7 +139,6 @@ nav ul li {
 }
 /* The "show" class is added to the filtered elements */
 .show {    display: inline;    }
-/* Style the buttons */
 main div {    text-align: center;    }
 main div a {    text-decoration: none;    }
 /* Scalable Images */
@@ -151,11 +150,12 @@ main div a img {
 }
 /* Scalable Videos */
 main div video {
-  width: 360px;
+  width: 100%;
+  max-width: 360px;
   height: 480px;
-  object-fit: cover;
+  object-fit: contain;
+  background-color: black;
 }
-
 .yesmobile { display: none; }
 /* Link color of "aqua" when not visited */
 a:link {    color: aqua;    }
