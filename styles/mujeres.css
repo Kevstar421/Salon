@@ -158,6 +158,9 @@ main div video {
 }
 /* Prevent video from being stretched when fullscreen */
 video:fullscreen { object-fit: contain; }
+video:-moz-full-screen {  object-fit: contain;  }
+video:-webkit-full-screen { object-fit: contain; }
+main div video:hover {  cursor: pointer;  }
 .yesmobile { display: none; }
 /* Link color of "aqua" when not visited */
 a:link {    color: aqua;    }
