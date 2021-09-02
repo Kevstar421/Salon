@@ -13,7 +13,7 @@ $("#myBtn").addEventListener("click", displayModal);
 const closeModal = () => {
   document.querySelector("#myBtnModal").style.display = "none";
 };
-$("#closeBtn").addEventListener("click", closeModal);
+$(".closeBtn").addEventListener("click", closeModal);
 
 // Function to close modal when clicked outside
 const closeModalOutside = (target) => {
