@@ -1,14 +1,23 @@
 const $ = selector => document.querySelector(selector);
 
-// Function to display modal when button is clicked
-const displayModal = () => document.querySelector("#myBtnModal").style.display = "block";
-$("#myBtn").addEventListener("click", displayModal);
+document.addEventListener("DOMContentLoaded", () => {
+    // Function to display modal when button is clicked
+    $("#myBtn").addEventListener("click", () => {
+        $("#myBtnModal").style.display = "block";
+    });
+
+    // Function to close modal when "x" is clicked
+    $(".closeBtn").addEventListener("click", () => {
+        $("#myBtnModal").style.display = "none";
+    });
+
+    // Function to close modal when clicked outside
+    $("#myBtnModal").addEventListener("click", pointer => {
+        if ( pointer.target == $("#myBtnModal") ) {
+            $("#myBtnModal").style.display = "none";
+        }
+    });
+});
 
 
-// Function to close modal when "x" is clicked
-const closeModal = () => document.querySelector("#myBtnModal").style.display = "none";
-$(".closeBtn").addEventListener("click", closeModal);
 
-// Function to close modal when clicked outside
-const closeModalOutside = target => document.querySelector("#myBtnModal").style.display = "none";
-$("#myBtnModal").addEventListener("click", closeModalOutside);
