@@ -36,9 +36,9 @@ header h1 {
   border-radius: 5px;
   cursor: pointer;
 }
-#myBtn:hover { background-color: gray; }
-#myBtn:focus { background-color: gray;}
-#myBtn:active { background-color: black; }
+#myBtn:hover { opacity: 0.7; }
+#myBtn:focus { opacity: 0.7; }
+#myBtn:active { background-color: #181818; }
 .fas { color: #edeef3; }
 /* Holds the navigations to hairstyles page & appointments */
 nav ul {
@@ -231,12 +231,12 @@ footer #copyright2 {
 }
 @media only screen and (max-width: 414px) {
   #logo { left: .9em; }
-  #myBtn {
-    border: 2px solid #edeef3;
-    vertical-align: top;
-  }
   .nomobile {
     display: none;
+  }
+  #myBtn {
+    border: 2px solid white;
+    background-color: black;
   }
   .yesmobile {
     display: inline;
