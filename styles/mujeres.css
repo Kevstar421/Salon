@@ -65,23 +65,6 @@ nav ul li {
   width: 100%; /* Full width */
   height: 100%; /* Full height */
   overflow: auto; /* Enable scroll if needed */
-  background-color: rgb(0, 0, 0); /* Fallback color */
-  background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
-}
-/* Modal Content */
-.modalBtnContent {
-  position: relative;
-  background-color: #181818;
-  margin: auto;
-  padding: 0;
-  border: 1px solid #edeef3;
-  width: 80%;
-  border-radius: 20px;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  -webkit-animation-name: animatetop;
-  -webkit-animation-duration: 0.4s;
-  animation-name: animatetop;
-  animation-duration: 0.4s;
 }
 /* Add Animation */
 @-webkit-keyframes animatetop {
@@ -103,6 +86,41 @@ nav ul li {
     top: 0;
     opacity: 1;
   }
+}
+@-webkit-keyframes animatebottom {
+  from {
+    top: 0;
+    opacity: 1;
+  }
+  to {
+    top: -300px;
+    opacity: 0;
+  }
+}
+@keyframes animatebottom {
+  from {
+    top: 0;
+    opacity: 1;
+  }
+  to {
+    top: -300px;
+    opacity: 0;
+  }
+}
+/* Modal Content */
+.modalBtnContent {
+  position: relative;
+  background-color: #181818;
+  margin: auto;
+  padding: 0;
+  border: 1px solid #edeef3;
+  width: 80%;
+  border-radius: 20px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  -webkit-animation-name: animatetop;
+  -webkit-animation-duration: 0.4s;
+  animation-name: animatetop;
+  animation-duration: 0.4s;
 }
 .active,
 #myBtnContainer a {
@@ -149,7 +167,7 @@ main div a img {
   object-fit: cover;
 }
 /* Scalable Videos */
-main div video {
+main div video, .play_button_container {
   width: 100%;
   max-width: 360px;
   max-height: 100%;
@@ -243,4 +261,22 @@ footer #copyright2 {
   }
   footer #copyright { display: none; }
   footer #copyright2 { display: block; }
+}
+.play_button_container {
+  position: relative;
+  display: inline-block;
+}
+.fa-play {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 9999;
+  cursor: pointer;
+  font-size: 2rem;
+  color: white;
+}
+.fa-play:hover {
+  transition: color 0.5s;
+  color: #181818;
 }
