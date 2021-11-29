@@ -167,7 +167,7 @@ main div a img {
   object-fit: cover;
 }
 /* Scalable Videos */
-main div video, .play_button_container {
+main div video {
   width: 100%;
   max-width: 360px;
   max-height: 100%;
@@ -265,18 +265,4 @@ footer #copyright2 {
 .play_button_container {
   position: relative;
   display: inline-block;
-}
-.fa-play {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-
-  cursor: pointer;
-  font-size: 2rem;
-  color: white;
-}
-.fa-play:hover {
-  transition: color 0.5s;
-  color: #181818;
 }
